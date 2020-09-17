@@ -1,14 +1,15 @@
-#include <iostream>
-#include <iomanip>
-#include "Seminar1.h"
+#include "Seminar3.h"
+#include "Seminar4.h"
+#include "Seminar5.h"
 
 using namespace std;
 
 
 int main()
 {
-   
-    Semenar3();
-    
+    setlocale(LC_ALL, "ru");
+    Seminar3();
+    Seminar4();
+    Seminar5();
     return 0;
 }
