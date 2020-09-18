@@ -145,9 +145,7 @@
     <ClCompile Include="Seminar5.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Seminar3.h" />
-    <ClInclude Include="Seminar4.h" />
-    <ClInclude Include="Seminar5.h" />
+    <ClInclude Include="Seminar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

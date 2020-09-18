@@ -1,4 +1,4 @@
-#include "Seminar3.h"
+#include "Seminar.h"
 
 
 //функция на сдвиг вниз

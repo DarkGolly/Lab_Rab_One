@@ -29,13 +29,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Seminar3.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Seminar4.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Seminar5.h">
+    <ClInclude Include="Seminar.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
