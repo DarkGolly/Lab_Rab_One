@@ -13,23 +13,56 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Seminar4">
+      <UniqueIdentifier>{9b385cd2-5242-4e02-bb21-1acf35e7ae28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Seminar3">
+      <UniqueIdentifier>{651f5c28-7103-4b9f-aea0-fa5266164986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Seminar5">
+      <UniqueIdentifier>{0434299b-02cb-43aa-9bd9-5da946d0036c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Seminar3.cpp">
+    <ClCompile Include="main_menu.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="sdown.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="sright.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="Seminar5.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Seminar4.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Seminar5.cpp">
+    <ClCompile Include="Seminar3.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="kol.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="sum.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="zam.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Seminar.h">
+    <ClInclude Include="main.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Include.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="prototype.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

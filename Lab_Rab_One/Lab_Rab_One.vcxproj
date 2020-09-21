@@ -139,13 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="kol.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="main_menu.cpp" />
+    <ClCompile Include="sdown.cpp" />
     <ClCompile Include="Seminar3.cpp" />
     <ClCompile Include="Seminar4.cpp" />
     <ClCompile Include="Seminar5.cpp" />
+    <ClCompile Include="sright.cpp" />
+    <ClCompile Include="sum.cpp" />
+    <ClCompile Include="zam.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Seminar.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="prototype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

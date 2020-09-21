@@ -1,22 +1,53 @@
-#include "Seminar.h"
+#include "Include.h"
 
 
-
-string change(string str)
+void Seminar3()
 {
-    for (size_t i = 0; i < str.length(); i++)
+    int i, j, n, m, d, l;
+    cout << "¬ведите размер массива:";
+    cin >> n >> m;
+
+    int** arr = new int* [n];
+    for (i = 0; i < n; i++)
     {
-        if (((str[i] == 'a') || (str[i] == 'e') || (str[i] == 'i') || (str[i] == 'o') || (str[i] == 'u') || (str[i] == 'y')) && ((str[i - 1] == ' ') || (str[i - 1] == '\'') || (str[i - 1] == '\"')))
-            str[i] = toupper(str[i]);
+        arr[i] = new int[m];
     }
-    return str;
-}
 
-void Seminar4()
-{
-    string str;
-    getline(cin, str);
-    str = change(str);
-    cout << str;
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < m; j++)
+        {
+            cin >> arr[i][j];
+        }
+    }
 
+    cin >> d >> l;
+
+    if (d == 0)
+    {
+        sdown(n, m, arr, l, i, j);
+
+        for (i = 0; i < n; i++)
+        {
+            for (j = 0; j < m; j++)
+            {
+                cout << arr[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    if (d == 1)
+    {
+        sright(n, m, arr, l, i, j);
+
+        for (i = 0; i < n; i++)
+        {
+            for (j = 0; j < m; j++)
+            {
+                cout << arr[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
 }
