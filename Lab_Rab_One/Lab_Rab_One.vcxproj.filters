@@ -27,23 +27,11 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="main_menu.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="sdown.cpp">
       <Filter>Исходные файлы\Seminar4</Filter>
     </ClCompile>
     <ClCompile Include="sright.cpp">
       <Filter>Исходные файлы\Seminar4</Filter>
-    </ClCompile>
-    <ClCompile Include="Seminar5.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Seminar4.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Seminar3.cpp">
-      <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="kol.cpp">
       <Filter>Исходные файлы\Seminar3</Filter>
@@ -53,6 +41,18 @@
     </ClCompile>
     <ClCompile Include="zam.cpp">
       <Filter>Исходные файлы\Seminar5</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar_3.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar_4.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar_5.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

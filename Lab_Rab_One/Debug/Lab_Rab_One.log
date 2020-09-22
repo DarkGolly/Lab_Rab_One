@@ -1,16 +1,2 @@
-﻿  kol.cpp
-  main.cpp
-  main_menu.cpp
-  sdown.cpp
-  Seminar3.cpp
-E:\project\С++ 2 курс\Lab_Rab_One\Lab_Rab_One\Seminar3.cpp(5,12): warning C4101: j: неиспользованная локальная переменная
-  Seminar4.cpp
-  Seminar5.cpp
-E:\project\С++ 2 курс\Lab_Rab_One\Lab_Rab_One\Seminar5.cpp(5,9): warning C4101: i: неиспользованная локальная переменная
-  sright.cpp
-  sum.cpp
-  zam.cpp
-  Создание кода...
-Seminar4.obj : error LNK2005: "void __cdecl Seminar3(void)" (?Seminar3@@YAXXZ) уже определен в Seminar3.obj
-main_menu.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl Seminar4(void)" (?Seminar4@@YAXXZ) в функции "void __cdecl main_menu(void)" (?main_menu@@YAXXZ).
-E:\project\С++ 2 курс\Lab_Rab_One\Debug\Lab_Rab_One.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+﻿  menu.cpp
+  Lab_Rab_One.vcxproj -> E:\project\С++ 2 курс\Lab_Rab_One\Debug\Lab_Rab_One.exe

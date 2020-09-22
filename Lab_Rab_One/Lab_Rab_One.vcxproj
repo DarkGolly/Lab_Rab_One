@@ -141,11 +141,11 @@
   <ItemGroup>
     <ClCompile Include="kol.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="main_menu.cpp" />
+    <ClCompile Include="menu.cpp" />
     <ClCompile Include="sdown.cpp" />
-    <ClCompile Include="Seminar3.cpp" />
-    <ClCompile Include="Seminar4.cpp" />
-    <ClCompile Include="Seminar5.cpp" />
+    <ClCompile Include="seminar_3.cpp" />
+    <ClCompile Include="seminar_4.cpp" />
+    <ClCompile Include="seminar_5.cpp" />
     <ClCompile Include="sright.cpp" />
     <ClCompile Include="sum.cpp" />
     <ClCompile Include="zam.cpp" />
