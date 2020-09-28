@@ -139,20 +139,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="check.cpp" />
+    <ClCompile Include="data_enter.cpp" />
+    <ClCompile Include="display_array.cpp" />
     <ClCompile Include="kol.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="sdown.cpp" />
-    <ClCompile Include="seminar_3.cpp" />
+    <ClCompile Include="menu_s_3.cpp" />
     <ClCompile Include="seminar_4.cpp" />
     <ClCompile Include="seminar_5.cpp" />
     <ClCompile Include="sright.cpp" />
     <ClCompile Include="sum.cpp" />
+    <ClCompile Include="s_3.cpp" />
     <ClCompile Include="zam.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h" />
-    <ClInclude Include="main.h" />
     <ClInclude Include="prototype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

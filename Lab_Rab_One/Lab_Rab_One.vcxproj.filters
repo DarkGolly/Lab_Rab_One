@@ -45,20 +45,29 @@
     <ClCompile Include="menu.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="seminar_3.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="seminar_4.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="seminar_5.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="s_3.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_s_3.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="data_enter.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="display_array.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="check.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Include.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>

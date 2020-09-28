@@ -8,16 +8,13 @@ void menu()
     cout << "Seminar number 4.\n";
     cout << "Seminar number 5.\n";
     cout << "\n\n\n\nEnter '0' and press \"Enter\" to exit the program.\n\n";
-    int a;
     cout << "Choose number seminar:";
+
+    int a = 0;
+
     while (true)
     {  
-        while (!(cin >> a) || (cin.peek() != '\n'))
-        {
-            cin.clear();
-            while (cin.get() != '\n');
-            cout << "Error!\nEnter the number:" << endl;
-        }
+        a = check(a);//проверка ввода
         if (a == 0)
         {
             cout << "Good bay!";
@@ -27,7 +24,7 @@ void menu()
         {
         case 3:
             system("cls");
-            seminar_3();
+            menu_s_3();
             break;
         case 4:
             system("cls");

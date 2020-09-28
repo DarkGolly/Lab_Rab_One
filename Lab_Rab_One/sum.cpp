@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void sum(double m[], int n, double max, double s)
+void sum(double* m, int n, double max, double s)
 {
     int nmax, i;
     max = m[0], nmax = 0;

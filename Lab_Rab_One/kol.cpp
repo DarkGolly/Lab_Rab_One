@@ -1,5 +1,8 @@
 #include "Include.h"
-void kol(double m[], int n, double A, double B)
+
+//кол-во элементов между A и B
+
+void quantity(double m[], int n, double A, double B)
 {
     double k = 0;
     int i;
