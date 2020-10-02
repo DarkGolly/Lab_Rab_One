@@ -1,36 +1,46 @@
 #include "Include.h"
 
-void menu_s_3()
+void menu_s_3(double* Array, int length)
 {
-    cout << "Seminar 3\n";
-    int i;
-    int length = 0;
-    const int maxlengthOfArray = 50;
+	char arr[] = "";
+	int switch_on = 0;
+	double А = 0;
+	while (true)
+	{
+		//кол-во элементов массива в диапазоне от А до В
+		cout << "1 - The number of array elements located in the range from A to B\n";
+		//сумма элементов массива после максимального элемента
+		cout << "2 - Sum of array elements located after the maximum element\n";
 
-    cout << "Enter the length of the array:\n";
-    cin >> length;//вводим длину массива
-    cout << endl;
-    
-    //проверка на корректность ввода длины массива
-    while (true)
-    {
-        if (length <= 0 || length > maxlengthOfArray)
-        {
-            cout << "\nBulding impossible" << endl;
-            cout << "\nEnter the size of the array -->";
-            cin >> length;
-        }
-        else
-            break;
-    }
-    
-    double* Array = new double[length];
-    data_enter(length, Array);
-    system("cls");
-    cout << endl << "Unsorted massive:" << endl;//выводим не отсортированный массив
-    display_array(length, Array);
-     
-    s_3(Array, length);
-    
-    
+		cout << "\n\n\n\nEnter '0' and press \"Enter\" to return to the previous menu.\n\n";
+		cout << "Choose further action:";
+
+		switch_on = check(switch_on);
+		if (switch_on == 0)
+		{
+			system("cls");
+			break;
+		}
+		switch (switch_on)
+		{
+		case 1:
+			system("cls");
+			cout << "Enter a range of numbers:\n";//ввод диапазона чисел
+			cin >> arr;
+			А = check_doub(arr);
+
+
+			//cin_distance(A_B);
+			//quantity(Array, length, A, B);
+			break;
+		case 2:
+			system("cls");
+			cout << "sum of elements after maximum\n";
+			sum(Array, length);
+			break;
+		default:
+			cout << "Attention!!! \nchoose number seminar again:";
+			break;
+		}
+	}
 }

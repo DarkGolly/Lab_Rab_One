@@ -33,9 +33,6 @@
     <ClCompile Include="sright.cpp">
       <Filter>Исходные файлы\Seminar4</Filter>
     </ClCompile>
-    <ClCompile Include="kol.cpp">
-      <Filter>Исходные файлы\Seminar3</Filter>
-    </ClCompile>
     <ClCompile Include="sum.cpp">
       <Filter>Исходные файлы\Seminar3</Filter>
     </ClCompile>
@@ -51,19 +48,28 @@
     <ClCompile Include="seminar_5.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="s_3.cpp">
-      <Filter>Исходные файлы\Seminar3</Filter>
-    </ClCompile>
-    <ClCompile Include="menu_s_3.cpp">
-      <Filter>Исходные файлы\Seminar3</Filter>
-    </ClCompile>
     <ClCompile Include="data_enter.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="display_array.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="check.cpp">
+    <ClCompile Include="quantity.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="cin_distance.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_s_3.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="s_3.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="check_int.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="check_doub.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

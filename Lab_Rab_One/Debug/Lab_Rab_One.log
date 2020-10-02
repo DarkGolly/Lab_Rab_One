@@ -1,6 +1,2 @@
-﻿  data_enter.cpp
-  menu.cpp
-  menu_s_3.cpp
-E:\project\С++ 2 курс\Lab_Rab_One\Lab_Rab_One\menu_s_3.cpp(6,9): warning C4101: i: неиспользованная локальная переменная
-  Создание кода...
+﻿  check_doub.cpp
   Lab_Rab_One.vcxproj -> E:\project\С++ 2 курс\Lab_Rab_One\Debug\Lab_Rab_One.exe

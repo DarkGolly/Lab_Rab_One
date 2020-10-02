@@ -139,19 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="check.cpp" />
+    <ClCompile Include="check_doub.cpp" />
+    <ClCompile Include="check_int.cpp" />
     <ClCompile Include="data_enter.cpp" />
     <ClCompile Include="display_array.cpp" />
-    <ClCompile Include="kol.cpp" />
+    <ClCompile Include="cin_distance.cpp" />
+    <ClCompile Include="quantity.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="sdown.cpp" />
-    <ClCompile Include="menu_s_3.cpp" />
+    <ClCompile Include="s_3.cpp" />
     <ClCompile Include="seminar_4.cpp" />
     <ClCompile Include="seminar_5.cpp" />
     <ClCompile Include="sright.cpp" />
     <ClCompile Include="sum.cpp" />
-    <ClCompile Include="s_3.cpp" />
+    <ClCompile Include="menu_s_3.cpp" />
     <ClCompile Include="zam.cpp" />
   </ItemGroup>
   <ItemGroup>

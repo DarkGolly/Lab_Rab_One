@@ -9,7 +9,7 @@ void display_array(int rows, int columns, int** Matrix);
 //lab ¹ 3
 void quantity(double m[], int n, double A, double B);
 void sum(double m[], int n, double max = 0, double s = 0);
-void menu_s_3();
+void menu_s_3(double* Array, int length);
 void s_3();
 
 //lab ¹ 4
@@ -23,5 +23,6 @@ void seminar_5();
 
 
 void menu();
-void s_3(double* Array, int length);
 int check(int a);
+int cin_distance(int A, int B);
+double check_doub(char* isDigit);
