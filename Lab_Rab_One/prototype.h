@@ -24,5 +24,5 @@ void seminar_5();
 
 void menu();
 int check(int a);
-int cin_distance(int A, int B);
+double cin_distance(double A, double B);
 double check_doub(char* isDigit);

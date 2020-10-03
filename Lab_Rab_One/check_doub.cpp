@@ -3,17 +3,21 @@
 double check_doub(char* isDigit)
 {
 	double digit = 0;
+	bool flag = true;
 
-	for (int i = 0; isDigit[i] != '\0'; i++)
+	while (flag)
 	{
-		if (!isdigit(isDigit[i]))
+		for (int i = 0; isDigit[i] != '\0'; i++)
 		{
-			cout << isDigit[i] << " ne cifra!\n";
+			if (!isdigit(isDigit[i]) && isDigit[i] != '.')
+			{
+				cout << "vvedite snachala\n-->";
+				cin >> isDigit;
+				i = -1;
+			}
 		}
-		else
-		{
-			cout << isDigit[i] << " cifra!\n";
-		}
+		break;
 	}
+	digit = atof(isDigit);
 	return digit;
 }

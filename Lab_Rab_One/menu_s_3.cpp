@@ -4,7 +4,7 @@ void menu_s_3(double* Array, int length)
 {
 	char arr[] = "";
 	int switch_on = 0;
-	double А = 0;
+	double A = 0, B;
 	while (true)
 	{
 		//кол-во элементов массива в диапазоне от А до В
@@ -25,12 +25,14 @@ void menu_s_3(double* Array, int length)
 		{
 		case 1:
 			system("cls");
-			cout << "Enter a range of numbers:\n";//ввод диапазона чисел
+			cout << "Enter start of range 'A':\n";//ввод начала диапазона
 			cin >> arr;
-			А = check_doub(arr);
+			A = check_doub(arr);
+			cout << "Enter end of range 'B':\n";//ввод конец диапазона
+			cin >> arr;
+			B = check_doub(arr);
 
-
-			//cin_distance(A_B);
+			cin_distance(A, B);
 			//quantity(Array, length, A, B);
 			break;
 		case 2:

@@ -1,13 +1,18 @@
 #include "Include.h"
 
-int cin_distance(double* A_B)
+double cin_distance(double A, double B)
 {
 	
-	if (true)
+	if (A > B)
 	{
-		cout << "ne pravilno!!!!!!!";
-	}
-	else cout << "pravilno!!!!!!!!!!!!!!!!!";
+		cout << "ne pravilno!!!!!!!\n";
+		cout << "enter again\n-->";
 
+	}
+	if (A == B)
+	{
+		cout << "ne pravilno!!!!!!!\n";
+		cout << "enter again\n-->";
+	}
 	return 0;
 }
