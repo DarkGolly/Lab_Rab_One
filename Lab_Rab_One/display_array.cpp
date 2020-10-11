@@ -4,7 +4,8 @@ void display_array(int rangeOfArray, double* Array)
 {
 	for (int i = 0; i < rangeOfArray; i++)//вывод массива
 	{
-		cout << setw(2) << Array[i] << endl;
+		cout << "\telement [ " << i << " ] ---> ";
+		cout << Array[i] << endl;
 	}
 	cout << endl;
 }

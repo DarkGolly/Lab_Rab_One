@@ -27,8 +27,6 @@ void s_3()
     double* Array = new double[length];
     data_enter(length, Array);
     system("cls");
-    cout << endl << "Unsorted massive:" << endl;//выводим не отсортированный массив
-    display_array(length, Array);
      
     menu_s_3(Array, length);
     

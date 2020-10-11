@@ -148,6 +148,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="sdown.cpp" />
+    <ClCompile Include="sorting.cpp" />
     <ClCompile Include="s_3.cpp" />
     <ClCompile Include="seminar_4.cpp" />
     <ClCompile Include="seminar_5.cpp" />

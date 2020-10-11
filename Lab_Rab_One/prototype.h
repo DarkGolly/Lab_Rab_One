@@ -8,9 +8,10 @@ void display_array(int rows, int columns, int** Matrix);
 
 //lab ¹ 3
 void quantity(double m[], int n, double A, double B);
-void sum(double m[], int n, double max = 0, double s = 0);
+void sum(double* arr, int len);
 void menu_s_3(double* Array, int length);
 void s_3();
+void sorting_s_3(int len, double* arr);
 
 //lab ¹ 4
 int** sdown(int n, int m, int** arr, int l, int i, int j);
@@ -24,5 +25,5 @@ void seminar_5();
 
 void menu();
 int check(int a);
-double cin_distance(double A, double B);
+void cin_distance(double* A, double* B, double& Arr, int lenght);
 double check_doub(char* isDigit);

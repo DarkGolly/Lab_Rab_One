@@ -2,11 +2,13 @@
 
 void data_enter(int rangeOfArray, double* Array)
 {
+	char arr[16] = "";
 	cout << "Fill the array: " << endl;
 	for (int i = 0; i < rangeOfArray; i++)
 	{
 		cout << "\telement [ " << i << " ] --->:";
-		Array[i] = check (Array[i]);
+		cin >> arr;
+		Array[i] = check_doub (arr);
 	}
 }
 

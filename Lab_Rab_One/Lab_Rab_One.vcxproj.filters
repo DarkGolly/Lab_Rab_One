@@ -72,6 +72,9 @@
     <ClCompile Include="check_doub.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="sorting.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h">

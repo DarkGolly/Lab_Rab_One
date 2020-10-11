@@ -9,9 +9,9 @@ double check_doub(char* isDigit)
 	{
 		for (int i = 0; isDigit[i] != '\0'; i++)
 		{
-			if (!isdigit(isDigit[i]) && isDigit[i] != '.')
+			if (!isdigit(isDigit[i]) && isDigit[i] != '.' && isDigit[i] != '-')
 			{
-				cout << "vvedite snachala\n-->";
+				cout << "enter again\n-->";
 				cin >> isDigit;
 				i = -1;
 			}
