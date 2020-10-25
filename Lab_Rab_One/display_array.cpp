@@ -10,13 +10,13 @@ void display_array(int rangeOfArray, double* Array)
 	cout << endl;
 }
 
-void display_array(int rows, int columns, int** Matrix)
+void display_array(int rows, int columns, int** Array)
 {
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
 		{
-			cout << setw(3) << Matrix[i][j] << " | ";
+			cout << setw(3) << Array[i][j] << " | ";
 		}
 		cout << endl;
 	}

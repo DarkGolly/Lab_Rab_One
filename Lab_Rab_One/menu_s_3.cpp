@@ -1,14 +1,14 @@
 #include "Include.h"
 
-void menu_s_3(double* Array, int length)
+void menu_s_3(double* arr, int & len)
 {
 	
-	int switch_on = 0;
+	char switch_on;
 	double A;
 	double B;
 	while (true)
 	{
-		display_array(length, Array);
+		display_array(len, arr);
 		//кол-во элементов массива в диапазоне от А до В
 		cout << "1 - The number of array elements located in the range from A to B\n";
 		//сумма элементов массива после максимального элемента
@@ -18,31 +18,31 @@ void menu_s_3(double* Array, int length)
 
 		cout << "\n\n\n\nEnter '0' and press \"Enter\" to return to the previous menu.\n\n";
 		cout << "Choose further action:";
-
-		switch_on = check(switch_on);
-		if (switch_on == 0)
+		cin >> switch_on;
+		if (switch_on == '0')
 		{
 			system("cls");
 			break;
 		}
 		switch (switch_on)
 		{
-		case 1:
+		case '1':
 			system("cls");
-			cin_distance(&A, &B, *Array, length);
-			quantity(Array, length, A, B);
-			system("cls");
-			break;
-		case 2:
-			system("cls");
-			cout << "sum of elements after maximum\n";
-			sum(Array, length);
+			cin_distance(A, B, arr, len);
+			quantity(arr, len, A, B);
 			system("pause");
 			system("cls");
 			break;
-		case 3:
+		case '2':
 			system("cls");
-			sorting_s_3(length, Array);
+			cout << "sum of elements after maximum\n";
+			sum(arr, len);
+			system("pause");
+			system("cls");
+			break;
+		case '3':
+			system("cls");
+			sorting_s_3(len, arr);
 			break;
 		default:
 			cout << "Attention!!! \nchoose number seminar again:";

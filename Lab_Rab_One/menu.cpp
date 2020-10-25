@@ -2,7 +2,7 @@
 
 void menu()
 {
-    int a = 0;
+    char a;
     cout << "Hello dear user!\n";
     cout << "This program has 3 seminars. This is:\n";
     cout << "Seminar number 3.\n";
@@ -14,26 +14,25 @@ void menu()
         cout << "\nEnter the number from 3 to 5:" << endl;
         cout << "\n\n\n\nEnter '0' and press \"Enter\" to exit the program.\n\n";
         cout << "Choose number seminar:";
-
-        a = check(a);//проверка ввода
-        if (a == 0)
+        cin >> a;
+        if (a == '0')
         {
             cout << "\nGood bay!";
             break;
         }
         switch (a)
         {
-        case 3:
+        case '3':
             system("cls");
             s_3();
             break;
-        case 4:
+        case '4':
             system("cls");
-            //seminar_4();
+            s_4();
             break;
-        case 5:
+        case '5':
             system("cls");
-            //seminar_5();
+            s_5();
             break;
         default:
             system("cls");

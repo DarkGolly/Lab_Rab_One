@@ -13,5 +13,4 @@ void quantity(double* arr, int len, double A, double B)
         }
     }
     cout << "Quantity is " << count << "\n";
-    system("pause");
 }

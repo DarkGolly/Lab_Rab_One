@@ -27,12 +27,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="sdown.cpp">
-      <Filter>Исходные файлы\Seminar4</Filter>
-    </ClCompile>
-    <ClCompile Include="sright.cpp">
-      <Filter>Исходные файлы\Seminar4</Filter>
-    </ClCompile>
     <ClCompile Include="sum.cpp">
       <Filter>Исходные файлы\Seminar3</Filter>
     </ClCompile>
@@ -40,12 +34,6 @@
       <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
     <ClCompile Include="menu.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="seminar_4.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="seminar_5.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="data_enter.cpp">
@@ -74,6 +62,36 @@
     </ClCompile>
     <ClCompile Include="sorting.cpp">
       <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="s_4.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_s_4.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="equality test.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="shift_down.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="shift_right.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="array_check.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="s_5.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_s5.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
+    </ClCompile>
+    <ClCompile Include="destroy.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="print_file.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

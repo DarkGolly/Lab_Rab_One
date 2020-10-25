@@ -3,10 +3,12 @@
 void sum(double* arr, int len)
 {
     double sum = 0;
-    int max_id = 0, i;
+    int max_id = 0;
+    int i;
     double max = 0;
+    
     bool flag = true;
-    int lenght = len;
+    char temp;
 
     display_array(len, arr);
     while (flag)
@@ -19,25 +21,28 @@ void sum(double* arr, int len)
                 max_id = i;
             }
         }
+        equality_test(len, arr, max, max_id);
+
         if (max_id == len-1 || max_id == len-2 )
         {
             cout << "Error!\nThe maximum cannot be found!\n\nIf you want to re-enter the data, enter \"1\".";
             cout << "Enter 0 to return to the menu.\n";
-            lenght = check(lenght);
-            switch (lenght)
+            cin >> temp;
+            switch (temp)
             {
-            case 0:
+            case '0':
                 flag = false;
                 break;
-            case 1:
+            case '1':
                 system("cls");
-                data_enter(len, arr);
+                destroy(arr, len);
+                arr = data_enter(len);
                 max = 0;
                 max_id = 0;
                 break;
 
             default:
-                cout << "Wrong action selected!\n Please re-enter!\n";
+                cout << "Wrong action selected!\n Please, enter again!\n";
                 break;
             }
         }
