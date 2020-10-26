@@ -1,5 +1,5 @@
 #include "Include.h"
-
+//удаляем массивы
 void destroy(double *arr, int len)
 {
 	delete[] arr;

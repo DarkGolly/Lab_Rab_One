@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array_check.cpp" />
+    <ClCompile Include="check_digit.cpp" />
     <ClCompile Include="check_doub.cpp" />
     <ClCompile Include="check_int.cpp" />
     <ClCompile Include="data_enter.cpp" />

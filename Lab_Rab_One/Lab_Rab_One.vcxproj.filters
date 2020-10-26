@@ -96,6 +96,9 @@
     <ClCompile Include="zamena.cpp">
       <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
+    <ClCompile Include="check_digit.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h">

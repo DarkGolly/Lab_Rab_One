@@ -1,14 +1,14 @@
 #include "Include.h"
 
 void cin_distance(double &A, double &B, double *Arr, int lenght)
-{
+{//цикл выполняется до тех пор, пока не будет введено корректный диапазон
 	char arr[16] = "";
 	while (true)
 	{
-		display_array(lenght, Arr);
+		display_array(lenght, Arr);//выводим массив
 		cout << "Enter start of range 'A':\n";//ввод начала диапазона
 		cin >> arr;
-		A = check_doub(arr);
+		A = check_doub(arr);//проверяем на корректность введённого значения
 		cout << "Enter end of range 'B':\n";//ввод конец диапазона
 		cin >> arr;
 		B = check_doub(arr);

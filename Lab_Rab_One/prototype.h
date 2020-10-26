@@ -28,7 +28,7 @@ void menu_s5(std::fstream &fl);
 void print_file(std::fstream &fl);
 void zamena(long long int position, char a);
 
-
+bool check_dig(char a);
 void menu();
 int check(int a);
 void cin_distance(double& A, double& B, double* Arr, int lenght);

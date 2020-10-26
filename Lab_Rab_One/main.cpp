@@ -2,6 +2,6 @@
 
 int main()
 {
-    menu();
+    menu();//вызываем главное меню
     return 0;
 }

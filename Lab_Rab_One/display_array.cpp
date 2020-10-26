@@ -1,5 +1,5 @@
 #include "Include.h"
-
+//выводим массивы
 void display_array(int rangeOfArray, double* Array)
 {
 	for (int i = 0; i < rangeOfArray; i++)//вывод массива

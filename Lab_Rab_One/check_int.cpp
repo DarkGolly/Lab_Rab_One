@@ -3,14 +3,12 @@
 int check(int a) 
 {
     //не принимает не целочисленные значени€
-    while (!(cin >> a) || (cin.peek() != '\n'))
+    while (!(cin >> a) || (cin.peek() != '\n'))//вводим число и смотрим на следующий символ в потоке
     {
-        cout << cin.peek();
         system("cls");
-        cin.clear();
-        while (cin.get() != '\n');
+        cin.clear();//чистит поток
+        while (cin.get() != '\n');//считываем из потока по одому символу
         cout << "Error!\nEnter again:" << endl;
     }
-    cout << cin.peek();
     return a;
 }

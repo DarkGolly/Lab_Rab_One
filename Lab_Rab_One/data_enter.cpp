@@ -5,7 +5,7 @@ double* data_enter(int &length)
 	const int maxlengthOfArray = 50;
 
 	cout << "Enter the length of the array:\n";
-	cin >> length;//вводим длину массива
+	length = check(length);//вводим длину массива
 	cout << endl;
 
 	//проверка на корректность ввода длины массива
@@ -15,21 +15,21 @@ double* data_enter(int &length)
 		{
 			cout << "\nBulding impossible" << endl;
 			cout << "\nEnter the size of the array -->";
-			cin >> length;
+			length = check(length);
 		}
 		else
 			break;
 	}
-	double* Array = new double[length];
+	double* Array = new double[length];//динамический массив
 	char arr[16] = "";
 	cout << "Fill the array: " << endl;
 	for (int i = 0; i < length; i++)
 	{
 		cout << "\telement [ " << i << " ] --->:";
 		cin >> arr;
-		Array[i] = check_doub (arr);
+		Array[i] = check_doub (arr);//вызываем функцию которая обрабатывает введённое значение
 	}
-	return Array;
+	return Array;//возвращаем указатель на массив
 }
 
 int** data_enter(int& rows, int& cols)
@@ -41,6 +41,7 @@ int** data_enter(int& rows, int& cols)
 		rows = check(rows);
 		cout << "\nEnter the number of columns:";
 		cols = check(cols);
+		//проверка на корректность ввода длины массива
 		if ((rows <= 0 || rows > maxlengthOfArray) && (cols <= 0 || cols > maxlengthOfArray))
 		{
 			cout << "\nBulding impossible\n" << endl;
@@ -51,7 +52,7 @@ int** data_enter(int& rows, int& cols)
 		}
 		else break;
 	}
-
+	//инициализация двумерного динамического массива
 	int** arr = new int* [rows];
 	for (int i = 0; i < rows; i++)
 	{
@@ -65,7 +66,7 @@ int** data_enter(int& rows, int& cols)
 		for (int j = 0; j < cols; ++j)
 		{
 			cout << "\n\telement [ " << i << " ] " << " [ " << j << " ] --->:";
-			arr[i][j] = check(temp_dig);
+			arr[i][j] = check(temp_dig);//вызываем функцию которая обрабатывает введённое значение
 		}
 	}
 	return arr;

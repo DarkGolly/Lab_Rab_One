@@ -23,8 +23,8 @@ void menu()
         switch (a)
         {
         case '3':
-            system("cls");
-            s_3();
+            system("cls");//чистит консоль
+            s_3();//вызываем 3 семинар
             break;
         case '4':
             system("cls");

@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void sorting_s_3(int len, double* arr)
+void sorting_s_3(int len, double* arr)//старая добрая быстрая сортировка
 {
     double t = 0;
     for (int i = 0; i < len; i++)
