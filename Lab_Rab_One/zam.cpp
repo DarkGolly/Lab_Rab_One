@@ -3,80 +3,52 @@
 void zam(fstream &fl)
 {
     print_file(fl);
-    cout << endl << endl;
-    int i = -1;
+
+    bool flag = 0;
     char a;
-    fl.clear();
-    cout << fl.cur << endl;
-    fl.seekg(2);
-    cout << fl.cur << endl;
+
     while (fl.get(a))
     {
-        if (a == ' ')
+        if (a == ' ' || a == '\n')
         {
-            i = 0;
+            flag = 1;
             continue;
         }
-        
-        fl.seekg(2);
-        cout << fl.cur << endl;
-        //cout << a << endl;
-        if ((a == 'a') && (i == 0))
+        if (fl.tellg() == 1)
+        {
+            flag = 1;
+        }
+        if ((a == 'a') && flag)
         {
             a = 'A';
-            fl.put(a);
-            
+            zamena(fl.tellp(), a);
         }
-            
-        if ((a == 'e') && (i == 0))
+        if ((a == 'e') && flag)
         {
             a = 'E';
-            fl.put(a);
+            zamena(fl.tellp(), a);
         }
-            
-        if ((a == 'i') && (i == 0))
+        if ((a == 'i') && flag)
         {
             a = 'I'; 
-            fl.put(a);
+            zamena(fl.tellp(), a);
         }
-            
-        if ((a == 'o') && (i == 0))
+        if ((a == 'o') && flag)
         {
             a = 'O';
-            fl.put(a);
+            zamena(fl.tellp(), a);
         }
-            
-        if ((a == 'u') && (i == 0))
+        if ((a == 'u') && flag)
         {
             a = 'U'; 
-            fl.put(a);
+            zamena(fl.tellp(), a);
         }
-            
-        if ((a == 'y') && (i == 0))
+        if ((a == 'y') && flag)
         {
             a = 'Y';
-            fl.put(a);
+            zamena(fl.tellp(), a);
         }
-        //cout << a << endl;
-        i--;
+        flag = 0;
     }
     print_file(fl);
-    /*for (i = 1; i <= n; i++)
-    {
-        if ((c[i] == 'a') && ((c[i - 1] == ' ') || (c[i - 1] == '\'')))
-            c[i] = 'A';
-        if ((c[i] == 'e') && ((c[i - 1] == ' ') || (c[i - 1] == '\'')))
-            c[i] = 'E';
-        if ((c[i] == 'i') && ((c[i - 1] == ' ') || (c[i - 1] == '\'')))
-            c[i] = 'I';
-        if ((c[i] == 'o') && ((c[i - 1] == ' ') || (c[i - 1] == '\'')))
-            c[i] = 'O';
-        if ((c[i] == 'u') && ((c[i - 1] == ' ') || (c[i - 1] == '\'')))
-            c[i] = 'U';
-        if ((c[i] == 'y') && ((c[i - 1] == ' ') || (c[i - 1] == '\'')))
-            c[i] = 'Y';
-    }*/
-    
-
-    //cout << c << '\n';
 }

@@ -12,7 +12,7 @@ void menu_s5(fstream &fl)
 		switch_on = check(switch_on);
 		if (switch_on == 0)
 		{
-			cout << "\nGood bay!";
+			system("cls");
 			break;
 		}
 		switch (switch_on)

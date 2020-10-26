@@ -26,6 +26,7 @@ void zam(std::fstream &fl);
 void s_5();
 void menu_s5(std::fstream &fl);
 void print_file(std::fstream &fl);
+void zamena(long long int position, char a);
 
 
 void menu();

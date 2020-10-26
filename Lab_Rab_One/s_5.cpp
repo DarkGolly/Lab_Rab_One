@@ -11,6 +11,7 @@ void s_5()
     fl.open("file.txt", ios::in | ios::out); //2 - чтение, 3 - запись, 1 - путь
     if (fl.is_open())
     {
+
         menu_s5(fl);
     }
     else

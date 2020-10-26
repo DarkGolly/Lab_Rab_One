@@ -162,6 +162,7 @@
     <ClCompile Include="menu_s_3.cpp" />
     <ClCompile Include="s_4.cpp" />
     <ClCompile Include="zam.cpp" />
+    <ClCompile Include="zamena.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h" />

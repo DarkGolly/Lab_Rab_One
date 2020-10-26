@@ -93,6 +93,9 @@
     <ClCompile Include="print_file.cpp">
       <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
+    <ClCompile Include="zamena.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h">
