@@ -1,2 +1,38 @@
-﻿  check_digit.cpp
+﻿  amount_of_elements.cpp
+  array_check.cpp
+  check_digit.cpp
+  check_doub.cpp
+  check_int.cpp
+  data_enter.cpp
+  destroy.cpp
+  display_array.cpp
+  cin_distance.cpp
+  equality test.cpp
+  error_menu_s_4.cpp
+  logic_sorting.cpp
+  menu_s5.cpp
+  menu_sorting.cpp
+  print_file.cpp
+  print_quantity.cpp
+  main.cpp
+  menu.cpp
+  menu_s_4.cpp
+  search_sum.cpp
+  Создание кода...
+  Компиляция...
+  shift_down.cpp
+  sorting.cpp
+  s_3_logic.cpp
+  s_5.cpp
+  shift_right.cpp
+  sum.cpp
+  menu_s_3.cpp
+  s_4.cpp
+  text_menu.cpp
+  text_menu_s_3.cpp
+  text_menu_s_4.cpp
+  wrong_id.cpp
+  zam.cpp
+  zamena.cpp
+  Создание кода...
   Lab_Rab_One.vcxproj -> E:\project\С++ 2 курс\Lab_Rab_One\Debug\Lab_Rab_One.exe

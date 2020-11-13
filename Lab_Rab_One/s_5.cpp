@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void s_5()
+bool s_5()
 {
     const int ln = 1000;
     int n = 0;
@@ -20,4 +20,5 @@ void s_5()
     }
     
     fl.close();
+    return true;
 }

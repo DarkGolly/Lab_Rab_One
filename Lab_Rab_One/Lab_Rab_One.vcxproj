@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="amount_of_elements.cpp" />
     <ClCompile Include="array_check.cpp" />
     <ClCompile Include="check_digit.cpp" />
     <ClCompile Include="check_doub.cpp" />
@@ -148,20 +149,28 @@
     <ClCompile Include="display_array.cpp" />
     <ClCompile Include="cin_distance.cpp" />
     <ClCompile Include="equality test.cpp" />
+    <ClCompile Include="error_menu_s_4.cpp" />
+    <ClCompile Include="logic_sorting.cpp" />
     <ClCompile Include="menu_s5.cpp" />
+    <ClCompile Include="menu_sorting.cpp" />
     <ClCompile Include="print_file.cpp" />
-    <ClCompile Include="quantity.cpp" />
+    <ClCompile Include="print_quantity.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="menu_s_4.cpp" />
+    <ClCompile Include="search_sum.cpp" />
     <ClCompile Include="shift_down.cpp" />
     <ClCompile Include="sorting.cpp" />
-    <ClCompile Include="s_3.cpp" />
+    <ClCompile Include="s_3_logic.cpp" />
     <ClCompile Include="s_5.cpp" />
     <ClCompile Include="shift_right.cpp" />
     <ClCompile Include="sum.cpp" />
     <ClCompile Include="menu_s_3.cpp" />
     <ClCompile Include="s_4.cpp" />
+    <ClCompile Include="text_menu.cpp" />
+    <ClCompile Include="text_menu_s_3.cpp" />
+    <ClCompile Include="text_menu_s_4.cpp" />
+    <ClCompile Include="wrong_id.cpp" />
     <ClCompile Include="zam.cpp" />
     <ClCompile Include="zamena.cpp" />
   </ItemGroup>

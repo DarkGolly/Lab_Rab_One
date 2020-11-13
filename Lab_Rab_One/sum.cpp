@@ -1,14 +1,14 @@
 #include "Include.h"
 
-void sum(double* arr, int len)
+bool sum(double* arr, int len)
 {
+    cout << "sum of elements after maximum\n";
     double sum = 0.0;
     int max_id = 0;
     int i = 0;
     double max = -1;
     
     bool flag = true;
-    char temp = ' ';
 
     display_array(len, arr);//выводим
     while (flag)
@@ -21,39 +21,18 @@ void sum(double* arr, int len)
                 max_id = i;//запоминаем его айди
             }
         }
-        equality_test(len, arr, max, max_id);//проводим тест на кол-во максимумов
+        flag = equality_test(len, arr, max, max_id);//проводим тест на кол-во максимумов и возвращаем айди
 
-        if (max_id == len-1 || max_id == len-2 )//если айди максимума последнее или предпоследнее, то предлогаем выбор
+        if (flag)//если айди максимума последнее или предпоследнее, то предлогаем выбор
         {
-            cout << "Error!\nThe maximum cannot be found!\n\nIf you want to re-enter the data, enter \"1\".";
-            cout << "Enter 0 to return to the menu.\n";
-            cin >> temp;
-            switch (temp)
-            {
-            case '0':
-                flag = false;//выходим из цикла и возвращаемся в меню
-                break;
-            case '1':
-                system("cls");
-                destroy(arr, len);//удаляем текущий массив 
-                arr = data_enter(len);// и создаём новый
-                max = 0;//обнуляем все значения и выполняем по новой
-                max_id = 0;
-                break;
-
-            default:
-                cout << "Wrong action selected!\n Please, enter again!\n";
-                break;
-            }
+            flag = wrong_id(arr, len, max, max_id);//пользователь выбирает дальнейшие действия вводить новый массив или выйти в меню
         }
         else//если всё окей, то находим долгожданную сумму
         {
-            for (i = max_id + 1; i < len; i++)
-            {
-                sum += arr[i];
-            }
+            sum = search_sum(arr, len, max_id, sum);
             cout << "The sum of elements located after the maximum element is " << sum << "\n";
-            flag = false;//выходим из цикла и возвращаемся в меню
+            return true;//выходим из цикла и возвращаемся в меню
         }    
     }
+    return false;
 }

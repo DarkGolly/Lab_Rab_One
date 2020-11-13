@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void equality_test (int len, double* arr, double& max, int& max_id)
+bool equality_test (int len, double* arr, double max, int& max_id)
 {
     bool check_dig = false;
     int temp_id = 0, temp_dig = 0;
@@ -24,5 +24,13 @@ void equality_test (int len, double* arr, double& max, int& max_id)
         {
             max_id = temp_id;//т.к. max_id принимал адрес, то это значение будет и в функции которая вызывала
         }
+    }
+    if (max_id == len - 1 || max_id == len - 2)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }

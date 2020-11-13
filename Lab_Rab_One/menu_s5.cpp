@@ -19,7 +19,7 @@ void menu_s5(fstream &fl)
 		{
 		case 1:
 			system("cls");
-			zam(fl);
+			search_letter(fl);
 			system("pause");
 			system("cls");
 			break;

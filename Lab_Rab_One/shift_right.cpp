@@ -1,27 +1,10 @@
 #include "Include.h"
 
-void shift_right(int &rows, int &cols, int** arr)
+bool shift_right(int &rows, int &cols, int** arr)
 {
     if (array_check(rows, cols, arr))
     {//в случае не корректности массива, предлагаем либо ввести новый массив, либо выйти в меню
-        cout << "1 - change matrix\n0 - exit to menu\n";
-        char temp;
-        cin >> temp;
-        switch (temp)
-        {
-        case '1':
-            destroy(arr, rows, cols);
-            arr = data_enter(rows, cols);
-            break;
-        case '0':
-            return;
-            break;
-        default:
-            cout << "Enter the action again";
-            system("pause");
-            system("cls");
-            break;
-        }
+        menu_error_s_4(arr, rows, cols);
     }
     else
     {
@@ -42,4 +25,5 @@ void shift_right(int &rows, int &cols, int** arr)
         }
         display_array(rows, cols, arr);
     }
+    return true;
 }

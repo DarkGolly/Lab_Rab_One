@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void zam(fstream &fl)
+ bool search_letter(fstream &fl)
 {
     print_file(fl);
 
@@ -21,34 +21,35 @@ void zam(fstream &fl)
         if ((a == 'a') && flag)
         {
             a = 'A';
-            zamena(fl.tellp(), a);
+            replacement(fl.tellp(), a);
         }
         if ((a == 'e') && flag)
         {
             a = 'E';
-            zamena(fl.tellp(), a);
+            replacement(fl.tellp(), a);
         }
         if ((a == 'i') && flag)
         {
             a = 'I'; 
-            zamena(fl.tellp(), a);
+            replacement(fl.tellp(), a);
         }
         if ((a == 'o') && flag)
         {
             a = 'O';
-            zamena(fl.tellp(), a);
+            replacement(fl.tellp(), a);
         }
         if ((a == 'u') && flag)
         {
             a = 'U'; 
-            zamena(fl.tellp(), a);
+            replacement(fl.tellp(), a);
         }
         if ((a == 'y') && flag)
         {
             a = 'Y';
-            zamena(fl.tellp(), a);
+            replacement(fl.tellp(), a);
         }
         flag = 0;
     }
     print_file(fl);
+    return true;
 }

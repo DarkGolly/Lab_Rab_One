@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void s_4()
+bool s_4()
 {
     cout << "Seminar 4\n";
     int rows = 0, cols = 0;
@@ -12,5 +12,5 @@ void s_4()
 
     destroy(arr, rows, cols);//удаление двумерного динамического массива
 
-    
+    return true;
 }
