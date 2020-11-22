@@ -11,6 +11,7 @@ bool shift_down(int& rows, int& cols, int** arr)
     {
         cout << "To move down\n\n";
         cout << "Enter the number of shifts\n--->:";
+
         int quantity = 0;
         quantity = check(quantity);//вводим кол-во сдвигов
         display_array(rows, cols, arr);//выводим массив

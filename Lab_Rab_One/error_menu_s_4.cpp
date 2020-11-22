@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void menu_error_s_4(int** arr, int& rows, int& cols)
+void menu_error_s_4(int** arr, int& rows, int& cols)//меню выбора действий в случае ошибки
 {
     cout << "1 - change matrix\n0 - exit to menu\n";
     char temp;

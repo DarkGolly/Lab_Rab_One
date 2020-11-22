@@ -10,6 +10,7 @@ bool shift_right(int &rows, int &cols, int** arr)
     {
         cout << "To move right\n\n";
         cout << "Enter the number of offsets to the right\n--->:";
+
         int quantity = 0;
         quantity = check(quantity);
         display_array(rows, cols, arr);

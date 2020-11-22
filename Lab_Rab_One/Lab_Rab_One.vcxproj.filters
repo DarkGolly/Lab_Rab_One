@@ -30,12 +30,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="sum.cpp">
-      <Filter>Исходные файлы\Seminar3</Filter>
-    </ClCompile>
-    <ClCompile Include="zam.cpp">
-      <Filter>Исходные файлы\Seminar5</Filter>
-    </ClCompile>
     <ClCompile Include="menu.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -128,6 +122,12 @@
     </ClCompile>
     <ClCompile Include="error_menu_s_4.cpp">
       <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_sum.cpp">
+      <Filter>Исходные файлы\Seminar3</Filter>
+    </ClCompile>
+    <ClCompile Include="find_the_first_vowel.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

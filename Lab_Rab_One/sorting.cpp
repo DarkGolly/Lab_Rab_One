@@ -1,12 +1,13 @@
 #include "Include.h"
 
-double* sorting_s_3(int len, double* arr)//старая добрая быстрая сортировка
+double* sorting_s_3(int len, double* arr)//быстрая сортировка
 {
     double* new_arr = new double [len];
     int const lenD = len;
     double pivot = 0;
     int ind = lenD / 2;
     int i, j = 0, k = 0;
+
     if (lenD > 1) 
     {
         double* L = new double[lenD];

@@ -1,12 +1,12 @@
 #include "Include.h"
 
-void print_file(fstream &fl)
+void print_file(fstream &fl)//вывод содержимого файла
 {
-	fl.clear();
-	fl.seekg(0);
+	fl.clear();//очищает флаги ошибок и переводит поток в нормальное состояние
+	fl.seekg(0);//ставим указатель на начало файла
 
 	char c;
-	while (fl.get(c))
+	while (fl.get(c))//берем по одному символу и выводим
 	{
 		cout << c;
 	}

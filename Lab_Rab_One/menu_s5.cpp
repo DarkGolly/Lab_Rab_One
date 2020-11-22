@@ -9,6 +9,7 @@ void menu_s5(fstream &fl)
 		print_file(fl);
 		cout << "\n\n";
 		cout << "enter 1 - recording in file\nenter 0 - exit this menu\n\n\n";
+
 		switch_on = check(switch_on);
 		if (switch_on == 0)
 		{

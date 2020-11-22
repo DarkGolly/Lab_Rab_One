@@ -4,7 +4,6 @@ void menu_s_3(double* arr, int & len)
 {
 	char switch_on;
 	
-
 	while (true)
 	{
 		display_array(len, arr);

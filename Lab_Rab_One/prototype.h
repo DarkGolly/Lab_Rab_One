@@ -8,7 +8,7 @@ void display_array(int rows, int columns, int** Matrix);
 
 //lab ¹ 3
 void print_quantity(double* arr, int len);
-bool sum(double* arr, int len);
+bool logic_sum(double* arr, int len);
 void menu_s_3(double* Array, int& length);
 bool logic_sorting(int len, double* arr);
 bool s_3_logic();
@@ -28,7 +28,7 @@ bool array_check(int rows, int cols, int** arr);
 void menu_error_s_4(int** arr, int& rows, int& cols);
 
 //lab ¹ 5
-bool search_letter(std::fstream& fl);
+bool find_the_first_vowel(std::fstream& fl);
 bool s_5();
 void menu_s5(std::fstream &fl);
 bool replacement(long long int position, char a);

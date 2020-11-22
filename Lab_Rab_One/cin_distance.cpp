@@ -1,7 +1,7 @@
 #include "Include.h"
 
-bool cin_distance(double &A, double &B, double *Arr, int lenght)
-{//цикл выполняется до тех пор, пока не будет введено корректный диапазон
+bool cin_distance(double &A, double &B, double *Arr, int lenght)//ввод дистанции
+{
 	char arr[16] = "";
 	display_array(lenght, Arr);//выводим массив
 	cout << "Enter start of range 'A':\n";//ввод начала диапазона

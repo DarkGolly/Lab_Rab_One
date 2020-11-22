@@ -1,6 +1,6 @@
 #include "Include.h"
 
-bool wrong_id(double* arr, int& len, double& max, int& max_id)
+bool wrong_id(double* arr, int& len, double& max, int& max_id)//в случай неверного айди даём выбр действий
 {
     cout << "Error!\nThe maximum cannot be found!\n\nIf you want to re-enter the data, enter \"1\".";
     cout << "Enter 0 to return to the menu.\n";

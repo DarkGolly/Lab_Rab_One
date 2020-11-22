@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссылку изменить нельза, а вот значения по этой ссылки можно
+void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссылку изменить нельзя, а вот значения по этой ссылки можно
 {
 	char switch_on = ' ';
 	while (true)
