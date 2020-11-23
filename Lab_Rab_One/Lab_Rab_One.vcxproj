@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="amount_of_elements.cpp" />
     <ClCompile Include="array_check.cpp" />
+    <ClCompile Include="checking file.cpp" />
     <ClCompile Include="check_digit.cpp" />
     <ClCompile Include="check_doub.cpp" />
     <ClCompile Include="check_int.cpp" />
@@ -150,9 +151,11 @@
     <ClCompile Include="cin_distance.cpp" />
     <ClCompile Include="equality test.cpp" />
     <ClCompile Include="error_menu_s_4.cpp" />
+    <ClCompile Include="isVowel.cpp" />
     <ClCompile Include="logic_sorting.cpp" />
     <ClCompile Include="menu_s5.cpp" />
     <ClCompile Include="menu_sorting.cpp" />
+    <ClCompile Include="non zero step.cpp" />
     <ClCompile Include="print_file.cpp" />
     <ClCompile Include="print_quantity.cpp" />
     <ClCompile Include="main.cpp" />
@@ -170,6 +173,7 @@
     <ClCompile Include="text_menu.cpp" />
     <ClCompile Include="text_menu_s_3.cpp" />
     <ClCompile Include="text_menu_s_4.cpp" />
+    <ClCompile Include="width==shift.cpp" />
     <ClCompile Include="wrong_id.cpp" />
     <ClCompile Include="find_the_first_vowel.cpp" />
     <ClCompile Include="replacement.cpp" />

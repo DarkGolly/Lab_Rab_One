@@ -2,6 +2,10 @@
 
  bool find_the_first_vowel(fstream &fl)//поиск первой гласной буквы
 {
+     if (checkingFile(fl) == false)
+     {
+         return false;
+     }
     print_file(fl);
 
     bool flag = 0;

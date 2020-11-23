@@ -11,7 +11,7 @@ bool s_5()
     }
     else
     {
-        cout << "Error!!!\n";
+        cout << "File read error!!!\n";
     }
     
     fl.close();

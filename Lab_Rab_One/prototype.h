@@ -23,6 +23,8 @@ int amount_of_elements(double* arr, int len, double A, double B);
 //lab ¹ 4
 bool shift_down(int& rows, int& cols, int** arr);
 bool shift_right(int& rows, int& cols, int** arr);
+bool findNonZeroStep(const int& quantity);
+bool widthEqualsOffset(int shift, int width);
 bool s_4();
 void menu_s_4(int& rows, int& cols, int** arr);
 bool array_check(int rows, int cols, int** arr);
@@ -30,6 +32,8 @@ void menu_error_s_4(int** arr, int& rows, int& cols);
 
 //lab ¹ 5
 bool find_the_first_vowel(std::fstream& fl);
+bool checkingFile(std::fstream& fl);
+bool isVowel(char c);
 bool s_5();
 void menu_s5(std::fstream &fl);
 bool replacement(long long int position, char a);

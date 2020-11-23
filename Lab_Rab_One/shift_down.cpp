@@ -13,7 +13,15 @@ bool shift_down(int& rows, int& cols, int** arr)
         cout << "Enter the number of shifts\n--->:";
 
         int quantity = 0;
-        quantity = check(quantity);//вводим кол-во сдвигов
+        do
+        {
+            quantity = check(quantity);//вводим кол-во сдвигов
+            if ((findNonZeroStep(quantity) || widthEqualsOffset(rows, quantity)) == false)
+            {
+                break;
+            }
+        } while (true);
+
         display_array(rows, cols, arr);//выводим массив
         for (int ch = 0; ch < quantity; ch++)
         {

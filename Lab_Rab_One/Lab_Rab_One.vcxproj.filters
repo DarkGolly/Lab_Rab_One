@@ -129,6 +129,18 @@
     <ClCompile Include="replacement.cpp">
       <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
+    <ClCompile Include="non zero step.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="width==shift.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="checking file.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
+    </ClCompile>
+    <ClCompile Include="isVowel.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h">

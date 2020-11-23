@@ -7,7 +7,8 @@ bool array_check(int rows, int cols, int **arr)
 		cout << "Shifting elements is not possible. There is only one element.\n";
 		return true;
 	}
-	//проверка значений массива
+
+	//проверка всех значений массива
 	for (int i = 0; i < rows; ++i)
 	{
 		for (int j = 0; j < cols; ++j)

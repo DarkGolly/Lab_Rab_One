@@ -12,7 +12,16 @@ bool shift_right(int &rows, int &cols, int** arr)
         cout << "Enter the number of offsets to the right\n--->:";
 
         int quantity = 0;
-        quantity = check(quantity);
+
+        do
+        {
+            quantity = check(quantity);//вводим кол-во сдвигов
+            if ((findNonZeroStep(quantity) || widthEqualsOffset(rows, quantity)) == false)
+            {
+                break;
+            }
+        } while (true);
+
         display_array(rows, cols, arr);
         for (int ch = 0; ch < quantity; ch++)
         {
