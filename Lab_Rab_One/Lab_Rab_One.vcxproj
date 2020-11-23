@@ -172,7 +172,7 @@
     <ClCompile Include="text_menu_s_4.cpp" />
     <ClCompile Include="wrong_id.cpp" />
     <ClCompile Include="find_the_first_vowel.cpp" />
-    <ClCompile Include="zamena.cpp" />
+    <ClCompile Include="replacement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h" />

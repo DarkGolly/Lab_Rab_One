@@ -20,7 +20,7 @@ void menu_s5(fstream &fl)
 		{
 		case 1:
 			system("cls");
-			search_letter(fl);
+			find_the_first_vowel(fl);
 			system("pause");
 			system("cls");
 			break;

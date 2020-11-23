@@ -25,7 +25,7 @@ void menu_s_3(double* arr, int & len)
 			break;
 		case '2':
 			system("cls");
-			sum(arr, len);//сумма элементов массива после максимального элемента
+			logic_sum(arr, len);//сумма элементов массива после максимального элемента
 			system("pause");
 			system("cls");
 			break;

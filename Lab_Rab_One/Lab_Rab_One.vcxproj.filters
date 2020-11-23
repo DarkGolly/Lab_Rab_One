@@ -84,9 +84,6 @@
     <ClCompile Include="print_file.cpp">
       <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
-    <ClCompile Include="zamena.cpp">
-      <Filter>Исходные файлы\Seminar5</Filter>
-    </ClCompile>
     <ClCompile Include="check_digit.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -127,6 +124,9 @@
       <Filter>Исходные файлы\Seminar3</Filter>
     </ClCompile>
     <ClCompile Include="find_the_first_vowel.cpp">
+      <Filter>Исходные файлы\Seminar5</Filter>
+    </ClCompile>
+    <ClCompile Include="replacement.cpp">
       <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
   </ItemGroup>
