@@ -8,7 +8,7 @@ bool logic_sorting(int len, double* arr)
 	display_array(len, arr);
 
 	cout << "\n\n\nit becam\n\n";
-	new_arr = sorting_s_3(len, arr);
+	new_arr = sorting_s_3(arr, len);
 	display_array(len, new_arr);
 
 	menu_sorting_s_3(arr, new_arr);
