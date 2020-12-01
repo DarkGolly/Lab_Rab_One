@@ -8,6 +8,7 @@ void display_array(int rows, int columns, int** Matrix);
 
 //lab ¹ 3
 void print_quantity(double* arr, int len);
+bool cin_distance(double& A, double& B, double* Arr, int lenght);
 bool logic_sum(double* arr, int len);
 void menu_s_3(double* Array, int& length);
 bool logic_sorting(int len, double* arr);
@@ -42,7 +43,6 @@ void print_file(std::fstream& fl);
 bool check_dig(char a);
 void menu();
 int check(int a);
-bool cin_distance(double& A, double& B, double* Arr, int lenght);
 double check_doub(char* isDigit);
 void destroy(double* arr, int len);
 void destroy(int** arr, int rows, int cols);
