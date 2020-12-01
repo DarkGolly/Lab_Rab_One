@@ -8,13 +8,14 @@ void display_array(int rows, int columns, int** Matrix);
 
 //lab ¹ 3
 void print_quantity(double* arr, int len);
+bool cin_distance(double& A, double& B, double* Arr, int lenght);
 bool logic_sum(double* arr, int len);
 void menu_s_3(double* Array, int& length);
 bool logic_sorting(int len, double* arr);
 bool s_3_logic();
 void menu_sorting_s_3(double* arr, double* new_arr);
-double* sorting_s_3(const int& size, double* arr);
-int compareing(const void* i, const void* j);
+double* sorting_s_3(const double* arr, const int& size);
+double* qsort_array(double* numbers, int size);
 bool equality_test(int len, double* arr, double max, int& max_id);
 bool wrong_id(double* arr, int& len, double& max, int& max_id);
 double search_sum(double* arr, int len, int max_id, double sum);
@@ -42,7 +43,6 @@ void print_file(std::fstream& fl);
 bool check_dig(char a);
 void menu();
 int check(int a);
-bool cin_distance(double& A, double& B, double* Arr, int lenght);
 double check_doub(char* isDigit);
 void destroy(double* arr, int len);
 void destroy(int** arr, int rows, int cols);

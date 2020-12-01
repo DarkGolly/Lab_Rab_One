@@ -13,7 +13,7 @@ void print_quantity(double* arr, int len)
         result = cin_distance(A, B, arr, len);//вводим дистанцию и проверяем на корректность
         if (result == true)
         {
-            count = amount_of_elements(arr, len, A, B);
+            count = amount_of_elements(arr, len, A, B);//кол-во элементов
             break;
         }
         else
