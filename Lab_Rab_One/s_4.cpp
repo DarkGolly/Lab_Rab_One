@@ -6,7 +6,11 @@ bool s_4()
     int rows = 0, cols = 0;
     int **arr;
 
+    rows = enter_length(rows);
+    cols = enter_length(cols);
+
     arr = data_enter(rows, cols);//присваиваем указателю указатель на двумерный массив
+
     system("cls");
     menu_s_4(rows, cols, arr);//вызов меню
 

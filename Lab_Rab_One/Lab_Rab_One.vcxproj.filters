@@ -141,6 +141,18 @@
     <ClCompile Include="isVowel.cpp">
       <Filter>Исходные файлы\Seminar5</Filter>
     </ClCompile>
+    <ClCompile Include="enter length.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_shift.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_shift.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
+    <ClCompile Include="copy_arr.cpp">
+      <Filter>Исходные файлы\Seminar4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h">

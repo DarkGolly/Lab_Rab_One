@@ -11,7 +11,7 @@ bool logic_sorting(int len, double* arr)
 	new_arr = sorting_s_3(arr, len);
 	display_array(len, new_arr);
 
-	menu_sorting_s_3(arr, new_arr);
+	menu_sorting_s_3(arr, new_arr, len);
 
 	delete new_arr;
 	return true;

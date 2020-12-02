@@ -16,10 +16,6 @@ void print_quantity(double* arr, int len)
             count = amount_of_elements(arr, len, A, B);//кол-во элементов
             break;
         }
-        else
-        {
-            result = cin_distance(A, B, arr, len);
-        }
     }
     cout << "Quantity is " << count << "\n";
 }

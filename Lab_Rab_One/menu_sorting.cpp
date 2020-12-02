@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void menu_sorting_s_3(double * arr, double* new_arr)
+void menu_sorting_s_3(double * arr, double* new_arr, int length)
 {
 	char switch_on;
 	while (true)
@@ -11,7 +11,10 @@ void menu_sorting_s_3(double * arr, double* new_arr)
 		switch (switch_on)
 		{
 		case '1':
-			arr = new_arr;
+			for (int i = 0; i < length; ++i)
+			{
+				arr[i] = new_arr[i];
+			}
 			return;
 		case '2':
 			return;

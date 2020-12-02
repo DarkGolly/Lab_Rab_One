@@ -1,10 +1,10 @@
 #include "Include.h"
 
-bool shift_right(int &rows, int &cols, int** arr)
+int** shift_right(int &rows, int &cols, int** new_arr)
 {
-    if (array_check(rows, cols, arr))
+    if (array_check(rows, cols, new_arr))
     {//в случае не корректности массива, предлагаем либо ввести новый массив, либо выйти в меню
-        menu_error_s_4(arr, rows, cols);
+        menu_error_s_4(new_arr, rows, cols);
     }
     else
     {
@@ -22,18 +22,16 @@ bool shift_right(int &rows, int &cols, int** arr)
             }
         } while (true);
 
-        display_array(rows, cols, arr);
         for (int ch = 0; ch < quantity; ch++)
         {
             for (int j = cols - 1; j > 0; j--)
             {
                 for (int i = 0; i < rows; i++)
                 {
-                    swap(arr[i][j], arr[i][j - 1]);
+                    swap(new_arr[i][j], new_arr[i][j - 1]);
                 }
             }
         }
-        display_array(rows, cols, arr);
     }
-    return true;
+    return new_arr;
 }

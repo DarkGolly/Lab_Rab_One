@@ -19,13 +19,13 @@ void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссы
 		{
 		case '1':
 			system("cls");
-			shift_down(rows, cols, arr);//сдвиг вниз
+			logic_shift(rows, cols, arr, switch_on);//сдвиг вниз
 			system("pause");
 			system("cls");
 			break;
 		case '2':
 			system("cls");
-			shift_right(rows, cols, arr);//сдвиг вправо
+			logic_shift(rows, cols, arr, switch_on);//сдвиг вправо
 			system("pause");
 			system("cls");
 			break;
