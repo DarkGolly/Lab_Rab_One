@@ -1,18 +1,24 @@
 #include "Include.h"
 
-double* data_enter(int &length)
+
+template <typename T>
+T* data_enter(int &length)
 {
-	double* Array = new double[length];//динамический массив
+	T* Array = new T[length];//динамический массив
 	char arr[16] = "";
 	cout << "Fill the array: " << endl;
 	for (int i = 0; i < length; i++)
 	{
 		cout << "\telement [ " << i << " ] --->:";
 		cin >> arr;
-		Array[i] = check_doub (arr);//вызываем функцию которая обрабатывает введённое значение
+		Array[i] = check_doub(arr);//вызываем функцию которая обрабатывает введённое значение
 	}
 	return Array;//возвращаем указатель на массив
 }
+
+template int* data_enter<int>(int&);
+template float* data_enter<float>(int&);
+template double* data_enter<double>(int&);
 
 int** data_enter(int& rows, int& cols)
 {

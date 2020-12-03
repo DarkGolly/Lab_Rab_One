@@ -1,6 +1,7 @@
 #include "Include.h"
 
-void menu_sorting_s_3(double * arr, double* new_arr, int length)
+template <typename T>
+void menu_sorting_s_3(T * arr, T* new_arr, int length)
 {
 	char switch_on;
 	while (true)
@@ -24,3 +25,7 @@ void menu_sorting_s_3(double * arr, double* new_arr, int length)
 		}
 	}
 }
+
+template void menu_sorting_s_3<int>(int*, int*, int);
+template void menu_sorting_s_3<float>(float*, float*, int);
+template void menu_sorting_s_3<double>(double*, double*, int);

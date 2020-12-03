@@ -1,6 +1,7 @@
 #include "Include.h"
 
-bool cin_distance(double &A, double &B, double *Arr, int lenght)//ввод дистанции
+template <typename T>
+bool cin_distance(T &A, T &B, T *Arr, int lenght)//ввод дистанции
 {
 	text_s3_1();
 	char arr[16] = "";
@@ -37,3 +38,7 @@ bool cin_distance(double &A, double &B, double *Arr, int lenght)//ввод дистанции
 	}
 	return true;
 }
+
+template bool cin_distance<int>(int&, int&, int*, int);
+template bool cin_distance<float>(float&, float&, float*, int);
+template bool cin_distance<double>(double&, double&, double*, int);

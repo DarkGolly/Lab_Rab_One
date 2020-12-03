@@ -153,6 +153,7 @@
     <ClCompile Include="enter length.cpp" />
     <ClCompile Include="equality test.cpp" />
     <ClCompile Include="error_menu_s_4.cpp" />
+    <ClCompile Include="get_type.cpp" />
     <ClCompile Include="isVowel.cpp" />
     <ClCompile Include="logic_shift.cpp" />
     <ClCompile Include="logic_sorting.cpp" />

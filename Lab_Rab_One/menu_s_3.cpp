@@ -1,6 +1,7 @@
 #include "Include.h"
 
-void menu_s_3(double* arr, int & len)
+template <typename T>
+void menu_s_3(T* arr, int & len)
 {
 	char switch_on;
 	
@@ -44,3 +45,7 @@ void menu_s_3(double* arr, int & len)
 		}
 	}
 }
+
+template void menu_s_3<int>(int*, int&);
+template void menu_s_3<float>(float*, int&);
+template void menu_s_3<double>(double*, int&);

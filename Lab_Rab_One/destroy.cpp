@@ -1,9 +1,14 @@
 #include "Include.h"
 //удаляем массивы
-void destroy(double *arr, int len)
+template <typename T>
+void destroy(T *arr, int len)
 {
 	delete[] arr;
 }
+
+template void destroy<int>(int*, int);
+template void destroy<float>(float*, int);
+template void destroy<double>(double*, int);
 
 void destroy(int** arr, int rows, int cols)
 {

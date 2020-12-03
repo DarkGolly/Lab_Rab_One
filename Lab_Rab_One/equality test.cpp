@@ -1,6 +1,8 @@
 #include "Include.h"
 
-double* equality_test (int& len, double* arr, double& max, int& max_id, bool& flag)//проверка равенства
+
+template <typename T>
+T* equality_test (int& len, T* arr, T& max, int& max_id, bool& flag)//проверка равенства
 {
     bool check_dig = false;
     int temp_id = 0, temp_dig = 0;
@@ -77,3 +79,7 @@ double* equality_test (int& len, double* arr, double& max, int& max_id, bool& fl
         }
     }
 }
+
+template int* equality_test<int>(int&, int*, int&, int&, bool&);
+template float* equality_test<float>(int&, float*, float&, int&, bool&);
+template double* equality_test<double>(int&, double *, double&, int&, bool&);

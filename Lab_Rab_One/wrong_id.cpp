@@ -1,6 +1,8 @@
 #include "Include.h"
 
-double* wrong_len(double* arr, int& len, bool& flag)
+
+template <typename T>
+T* wrong_len(T* arr, int& len, bool& flag)
 {
     while (true)
     {
@@ -19,7 +21,7 @@ double* wrong_len(double* arr, int& len, bool& flag)
             system("cls");
             destroy(arr, len);//удаляем текущий массив 
             len = enter_length(len);
-            arr = data_enter(len);// и создаём новый
+            arr = data_enter<T>(len);// и создаём новый
             return arr;//продолжаем работу
 
         default:
@@ -30,3 +32,7 @@ double* wrong_len(double* arr, int& len, bool& flag)
     }
     return arr;
 }
+
+template int* wrong_len<int>(int*, int&, bool&);
+template float* wrong_len<float>(float*, int&, bool&);
+template double* wrong_len<double>(double*, int&, bool&);

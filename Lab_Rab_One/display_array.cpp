@@ -1,6 +1,7 @@
 #include "Include.h"
 //выводим массивы
-void display_array(int rangeOfArray, double* Array)
+template <typename T>
+void display_array(int rangeOfArray, T* Array)
 {
 	for (int i = 0; i < rangeOfArray; i++)//вывод массива
 	{
@@ -9,6 +10,10 @@ void display_array(int rangeOfArray, double* Array)
 	}
 	cout << endl;
 }
+
+template void display_array<int>(int rangeOfArray, int* Array);
+template void display_array<float>(int rangeOfArray, float* Array);
+template void display_array<double>(int rangeOfArray, double* Array);
 
 void display_array(int rows, int columns, int** Array)
 {

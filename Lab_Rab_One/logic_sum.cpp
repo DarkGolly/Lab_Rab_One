@@ -1,13 +1,14 @@
 #include "Include.h"
 
-double* logic_sum(double* arr, int& len)
+template <typename T>
+T* logic_sum(T* arr, int& len)
 {
 
     cout << "sum of elements after maximum\n\n";
-    double sum = 0.0;
+    T sum = 0;
     int max_id = 0;
     int i = 0;
-    double max = -9999999999.9;
+    T max = -9999999999;
     
     bool flag = true;
     
@@ -39,3 +40,7 @@ double* logic_sum(double* arr, int& len)
     }
     return arr;
 }
+
+template int* logic_sum<int>(int*, int&);
+template float* logic_sum<float>(float*, int&);
+template double* logic_sum<double>(double*, int&);

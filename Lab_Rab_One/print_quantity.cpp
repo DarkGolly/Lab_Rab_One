@@ -1,11 +1,12 @@
 #include "Include.h"
 
 //кол-во элементов между A и B
-void print_quantity(double* arr, int len)
+template <typename T>
+void print_quantity(T* arr, int len)
 {
     int count = 0;
-    double A;
-    double B;
+    T A;
+    T B;
     bool result;
 
     while (true)
@@ -19,3 +20,7 @@ void print_quantity(double* arr, int len)
     }
     cout << "Quantity is " << count << "\n";
 }
+
+template void print_quantity<int>(int*, int);
+template void print_quantity<float>(float*, int);
+template void print_quantity<double>(double*, int);

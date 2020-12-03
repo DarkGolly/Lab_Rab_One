@@ -1,8 +1,9 @@
 #include "Include.h"
 
-bool logic_sorting(int len, double* arr)
+template <typename T>
+bool logic_sorting(int len, T* arr)
 {
-	double* new_arr;
+	T* new_arr;
 
 	cout << "it was\n\n";
 	display_array(len, arr);
@@ -16,3 +17,7 @@ bool logic_sorting(int len, double* arr)
 	delete new_arr;
 	return true;
 }
+
+template bool logic_sorting<int>(int, int*);
+template bool logic_sorting<float>(int, float*);
+template bool logic_sorting<double>(int, double*);

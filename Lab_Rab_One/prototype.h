@@ -1,26 +1,42 @@
 #pragma once
 
-double* data_enter(int& length);
+int get_type();
+template <typename T>
+extern T* data_enter(int& length);
 int** data_enter(int& rows, int& cols);
 int enter_length(int& length);
 
-void display_array(int rangeOfArray, double* Array);
+template <typename T>
+extern void display_array(int rangeOfArray, T* Array);
 void display_array(int rows, int columns, int** Matrix);
 
 //lab ¹ 3
-void print_quantity(double* arr, int len);
-bool cin_distance(double& A, double& B, double* Arr, int lenght);
-double* logic_sum(double* arr, int& len);
-void menu_s_3(double* Array, int& length);
-bool logic_sorting(int len, double* arr);
-bool s_3_logic();
-void menu_sorting_s_3(double* arr, double* new_arr, int length);
-double* sorting_s_3(const double* arr, const int& size);
-void qsort_array(double* numbers, int size);
-double* equality_test(int& len, double* arr, double& max, int& max_id, bool& flag);
-double* wrong_len(double* arr, int& len, bool& flag);
-double search_sum(double* arr, int len, int max_id, double sum);
-int amount_of_elements(double* arr, int len, double A, double B);
+template <typename T>
+extern void print_quantity(T* arr, int len);
+template <typename T>
+extern bool cin_distance(T& A, T& B, T* Arr, int lenght);
+template <typename T>
+extern T* logic_sum(T* arr, int& len);
+template <typename T>
+extern void menu_s_3(T* Array, int& length);
+template <typename T>
+extern bool logic_sorting(int len, T* arr);
+template <typename T>
+extern bool s_3_logic();
+template <typename T>
+extern void menu_sorting_s_3(T* arr, T* new_arr, int length);
+template <typename T>
+extern T* sorting_s_3(const T* arr, const int& size);
+template <typename T>
+extern void qsort_array(T* numbers, int size);
+template <typename T>
+extern T* equality_test(int& len, T* arr, T& max, int& max_id, bool& flag);
+template <typename T>
+extern T* wrong_len(T* arr, int& len, bool& flag);
+template <typename T>
+extern T search_sum(T* arr, int len, int max_id, T sum);
+template <typename T>
+extern int amount_of_elements(T* arr, int len, T A, T B);
 
 //lab ¹ 4
 int** shift_down(int& rows, int& cols, int** arr);
@@ -48,7 +64,8 @@ bool check_dig(char a);
 void menu();
 int check(int a);
 double check_doub(char* isDigit);
-void destroy(double* arr, int len);
+template <typename T>
+extern void destroy(T* arr, int len);
 void destroy(int** arr, int rows, int cols);
 void text_menu();
 void text_menu_s_3();
