@@ -28,7 +28,7 @@ int** shift_right(int& rows, int& cols, int** arr);
 bool findNonZeroStep(const int& quantity);
 bool widthEqualsOffset(int shift, int width);
 bool s_4();
-int** menu_s_4(int& rows, int& cols, int** arr);
+void menu_s_4(int& rows, int& cols, int** arr);
 bool array_check(int rows, int cols, int** arr);
 int** menu_error_s_4(int** arr, int& rows, int& cols);
 int** menu_shift(int& rows, int& cols, int** arr, int** new_arr, int old_rows, int old_cols);

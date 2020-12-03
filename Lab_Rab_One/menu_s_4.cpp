@@ -1,6 +1,6 @@
 #include "Include.h"
 
-int** menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссылку изменить нельзя, а вот значения по этой ссылки можно
+void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссылку изменить нельзя, а вот значения по этой ссылки можно
 {
 	char switch_on = ' ';
 	while (true)
@@ -12,8 +12,9 @@ int** menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму сс
 		cin >> switch_on;
 		if (switch_on == '0')
 		{
+			destroy(arr, rows, cols);//удаление двумерного динамического массива
 			system("cls");
-			return arr;
+			break;
 		}
 		switch (switch_on)
 		{

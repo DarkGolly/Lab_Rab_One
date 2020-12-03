@@ -6,7 +6,7 @@ int** logic_shift(int& rows, int& cols, int** arr, char flag)//flag может быть т
 	int old_rows = rows;
 	int old_cols = cols;
 
-	display_array(rows, cols, arr);//выводим массив
+	display_array(rows, cols, new_arr);//выводим массив
 
 	if (flag == '1')
 	{
