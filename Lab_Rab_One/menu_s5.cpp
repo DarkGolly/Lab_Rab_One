@@ -6,6 +6,7 @@ void menu_s5(fstream &fl)
 	
 	while (true)
 	{
+		text_menu_s_5();
 		print_file(fl);
 		cout << "\n\n";
 		cout << "enter 1 - recording in file\nenter 0 - exit this menu\n\n\n";

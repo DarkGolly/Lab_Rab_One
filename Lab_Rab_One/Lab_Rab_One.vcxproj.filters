@@ -156,6 +156,9 @@
     <ClCompile Include="text_s3_1.cpp">
       <Filter>Исходные файлы\text</Filter>
     </ClCompile>
+    <ClCompile Include="text_menu_s_5.cpp">
+      <Filter>Исходные файлы\text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h">

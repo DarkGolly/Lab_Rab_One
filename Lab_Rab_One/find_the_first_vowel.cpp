@@ -6,6 +6,7 @@
      {
          return false;
      }
+    text_menu_s_5();
     print_file(fl);
 
     bool flag = 0;

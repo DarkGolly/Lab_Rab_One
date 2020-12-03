@@ -177,6 +177,7 @@
     <ClCompile Include="text_menu.cpp" />
     <ClCompile Include="text_menu_s_3.cpp" />
     <ClCompile Include="text_menu_s_4.cpp" />
+    <ClCompile Include="text_menu_s_5.cpp" />
     <ClCompile Include="text_s3_1.cpp" />
     <ClCompile Include="width==shift.cpp" />
     <ClCompile Include="wrong_id.cpp" />

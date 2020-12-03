@@ -54,3 +54,4 @@ void text_menu();
 void text_menu_s_3();
 void text_s3_1();
 void text_menu_s_4();
+void text_menu_s_5();
