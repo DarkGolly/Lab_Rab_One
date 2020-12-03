@@ -1,6 +1,8 @@
 #include "Include.h"
 
-int** menu_error_s_4(int** arr, int& rows, int& cols)//меню выбора действий в случае ошибки
+
+template <typename T>
+T** menu_error_s_4(T** arr, int& rows, int& cols)//меню выбора действий в случае ошибки
 {
     while (true)
     {
@@ -13,7 +15,7 @@ int** menu_error_s_4(int** arr, int& rows, int& cols)//меню выбора действий в сл
             destroy(arr, rows, cols);
             rows = enter_length(rows);
             cols = enter_length(cols);
-            arr = data_enter(rows, cols);
+            arr = data_enter<T>(rows, cols);
             return arr;
         case '0':
             return arr;
@@ -24,3 +26,7 @@ int** menu_error_s_4(int** arr, int& rows, int& cols)//меню выбора действий в сл
         }
     }
 }
+
+template int** menu_error_s_4<int>(int**, int&, int&);
+template float** menu_error_s_4<float>(float**, int&, int&);
+template double** menu_error_s_4<double>(double**, int&, int&);

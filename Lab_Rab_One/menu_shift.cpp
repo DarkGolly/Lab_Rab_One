@@ -1,6 +1,7 @@
 #include "Include.h"
 
-int** menu_shift(int& rows, int& cols, int** arr, int** new_arr, int old_rows, int old_cols)
+template <typename T>
+T** menu_shift(int& rows, int& cols, T** arr, T** new_arr, int old_rows, int old_cols)
 {
 	char switch_on;
 	while (true)
@@ -31,3 +32,7 @@ int** menu_shift(int& rows, int& cols, int** arr, int** new_arr, int old_rows, i
 		}
 	}
 }
+
+template int** menu_shift<int>(int&, int&, int**, int**, int, int);
+template float** menu_shift<float>(int&, int&, float**, float**, int, int);
+template double** menu_shift<double>(int&, int&, double**, double**, int, int);

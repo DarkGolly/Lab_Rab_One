@@ -15,15 +15,20 @@ template void display_array<int>(int rangeOfArray, int* Array);
 template void display_array<float>(int rangeOfArray, float* Array);
 template void display_array<double>(int rangeOfArray, double* Array);
 
-void display_array(int rows, int columns, int** Array)
+template <typename T>
+void display_array(int rows, int columns, T** Array)
 {
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < columns; j++)
 		{
-			cout << setw(3) << Array[i][j] << " | ";
+			cout << setw(5) << Array[i][j] << " | ";
 		}
 		cout << endl;
 	}
 	cout << endl;
 }
+
+template void display_array<int>(int, int, int**);
+template void display_array<float>(int, int, float**);
+template void display_array<double>(int, int, double**);

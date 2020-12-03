@@ -20,16 +20,17 @@ template int* data_enter<int>(int&);
 template float* data_enter<float>(int&);
 template double* data_enter<double>(int&);
 
-int** data_enter(int& rows, int& cols)
+template <typename T>
+T** data_enter(int& rows, int& cols)
 {
 	//инициализация двумерного динамического массива
-	int** arr = new int* [rows];
+	T** arr = new T* [rows];
 	for (int i = 0; i < rows; i++)
 	{
-		arr[i] = new int[cols];
+		arr[i] = new T[cols];
 	}
 
-	int temp_dig = 0;
+	T temp_dig = 0.0;
 	cout << "Enter a data in matrix: " << endl;
 	for (int i = 0; i < rows; ++i)
 	{
@@ -41,3 +42,7 @@ int** data_enter(int& rows, int& cols)
 	}
 	return arr;
 }
+
+template int** data_enter<int>(int&, int&);
+template float** data_enter<float>(int&, int&);
+template double** data_enter<double>(int&, int&);

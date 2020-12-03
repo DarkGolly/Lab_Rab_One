@@ -1,7 +1,8 @@
 #include "Include.h"
 
 //функция на сдвиг вниз
-int** shift_down(int& rows, int& cols, int** new_arr)
+template <typename T>
+T** shift_down(int& rows, int& cols, T** new_arr)
 {
     if (array_check(rows, cols, new_arr))//проверяем массив корректность
     {//в случае не корректности массива, предлагаем либо ввести новый массив, либо выйти в меню
@@ -35,3 +36,7 @@ int** shift_down(int& rows, int& cols, int** new_arr)
     }
     return new_arr;
 }
+
+template int** shift_down<int>(int&, int&, int**);
+template float** shift_down<float>(int&, int&, float**);
+template double** shift_down<double>(int&, int&, double**);

@@ -1,12 +1,13 @@
 #include "Include.h"
 
-int** copy_arr(int& rows, int& cols, int** arr)
+template <typename T>
+T** copy_arr(int& rows, int& cols, T** arr)
 {
-	int** new_arr = new int* [rows];
+	T** new_arr = new T* [rows];
 
 	for (int i = 0; i < rows; i++)
 	{
-		new_arr[i] = new int[cols];
+		new_arr[i] = new T[cols];
 	}
 
 	for (int i = 0; i < rows; i++)
@@ -18,3 +19,7 @@ int** copy_arr(int& rows, int& cols, int** arr)
 	}
 	return new_arr;
 }
+
+template int** copy_arr<int>(int&, int&, int**);
+template float** copy_arr<float>(int&, int&, float**);
+template double** copy_arr<double>(int&, int&, double**);

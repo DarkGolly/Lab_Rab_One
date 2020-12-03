@@ -1,6 +1,7 @@
 #include "Include.h"
 
-bool array_check(int rows, int cols, int **arr)
+template <typename T>
+bool array_check(int rows, int cols, T **arr)
 {//проверка размерности массива
 	if (rows == 1 && cols == 1)
 	{
@@ -22,3 +23,7 @@ bool array_check(int rows, int cols, int **arr)
 	cout << "Shifting elements is pointless. All elements are the same.\n";
 	return true;
 }
+
+template bool array_check<int>(int, int, int**);
+template bool array_check<float>(int, int, float**);
+template bool array_check<double>(int, int, double**);

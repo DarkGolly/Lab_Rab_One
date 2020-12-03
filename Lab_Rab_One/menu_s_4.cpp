@@ -1,6 +1,8 @@
 #include "Include.h"
 
-void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссылку изменить нельзя, а вот значения по этой ссылки можно
+
+template <typename T>
+void menu_s_4(int &rows, int &cols, T** arr)//амперсанд - это ссылка, саму ссылку изменить нельзя, а вот значения по этой ссылки можно
 {
 	char switch_on = ' ';
 	while (true)
@@ -33,7 +35,7 @@ void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссы
 		case '3':
 			system("cls");
 			destroy(arr, rows, cols);//удаление массива и
-			arr = data_enter(rows, cols);//создание нового
+			arr = data_enter<T>(rows, cols);//создание нового
 			system("cls");
 			break;
 		default:
@@ -44,3 +46,7 @@ void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссы
 		}
 	}
 }
+
+template void menu_s_4<int>(int&, int&, int**);
+template void menu_s_4<float>(int&, int&, float**);
+template void menu_s_4<double>(int&, int&, double**);

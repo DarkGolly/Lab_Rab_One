@@ -3,12 +3,14 @@
 int get_type();
 template <typename T>
 extern T* data_enter(int& length);
-int** data_enter(int& rows, int& cols);
+template <typename T>
+extern T** data_enter(int& rows, int& cols);
 int enter_length(int& length);
 
 template <typename T>
 extern void display_array(int rangeOfArray, T* Array);
-void display_array(int rows, int columns, int** Matrix);
+template <typename T>
+extern void display_array(int rows, int columns, T** Matrix);
 
 //lab ¹ 3
 template <typename T>
@@ -39,17 +41,26 @@ template <typename T>
 extern int amount_of_elements(T* arr, int len, T A, T B);
 
 //lab ¹ 4
-int** shift_down(int& rows, int& cols, int** arr);
-int** shift_right(int& rows, int& cols, int** arr);
+template <typename T>
+extern T** shift_down(int& rows, int& cols, T** arr);
+template <typename T>
+extern T** shift_right(int& rows, int& cols, T** arr);
 bool findNonZeroStep(const int& quantity);
 bool widthEqualsOffset(int shift, int width);
-bool s_4();
-void menu_s_4(int& rows, int& cols, int** arr);
-bool array_check(int rows, int cols, int** arr);
-int** menu_error_s_4(int** arr, int& rows, int& cols);
-int** menu_shift(int& rows, int& cols, int** arr, int** new_arr, int old_rows, int old_cols);
-int** logic_shift(int& rows, int& cols, int** arr, char flag);
-int** copy_arr(int& rows, int& cols, int** arr);
+template <typename T>
+extern bool s_4();
+template <typename T>
+extern void menu_s_4(int& rows, int& cols, T** arr);
+template <typename T>
+extern bool array_check(int rows, int cols, T** arr);
+template <typename T>
+extern T** menu_error_s_4(T** arr, int& rows, int& cols);
+template <typename T>
+extern T** menu_shift(int& rows, int& cols, T** arr, T** new_arr, int old_rows, int old_cols);
+template <typename T>
+extern T** logic_shift(int& rows, int& cols, T** arr, char flag);
+template <typename T>
+extern T** copy_arr(int& rows, int& cols, T** arr);
 
 //lab ¹ 5
 bool find_the_first_vowel(std::fstream& fl);
@@ -62,11 +73,13 @@ void print_file(std::fstream& fl);
 
 bool check_dig(char a);
 void menu();
-int check(int a);
+template <typename T>
+extern T check(T a);
 double check_doub(char* isDigit);
 template <typename T>
 extern void destroy(T* arr, int len);
-void destroy(int** arr, int rows, int cols);
+template <typename T>
+extern void destroy(T** arr, int rows, int cols);
 void text_menu();
 void text_menu_s_3();
 void text_s3_1();

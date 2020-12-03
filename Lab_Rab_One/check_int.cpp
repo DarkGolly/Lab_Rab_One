@@ -1,6 +1,7 @@
 #include "Include.h"
 
-int check(int a) 
+template <typename T>
+T check(T a) 
 {
     //не принимает не целочисленные значения
     while (!(cin >> a) || (cin.peek() != '\n'))//вводим число и смотрим на следующий символ в потоке
@@ -12,3 +13,7 @@ int check(int a)
     }
     return a;
 }
+
+template int check<int>(int);
+template float check<float>(float);
+template double check<double>(double);

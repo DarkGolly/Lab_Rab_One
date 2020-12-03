@@ -10,7 +10,8 @@ template void destroy<int>(int*, int);
 template void destroy<float>(float*, int);
 template void destroy<double>(double*, int);
 
-void destroy(int** arr, int rows, int cols)
+template <typename T>
+void destroy(T** arr, int rows, int cols)
 {
 	for (int i = 0; i < rows; i++)
 	{
@@ -18,3 +19,7 @@ void destroy(int** arr, int rows, int cols)
 	}
 	delete[] arr;
 }
+
+template void destroy<int>(int**, int, int);
+template void destroy<float>(float**, int, int);
+template void destroy<double>(double**, int, int);

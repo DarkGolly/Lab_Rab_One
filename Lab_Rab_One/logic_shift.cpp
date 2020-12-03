@@ -1,8 +1,9 @@
 #include "Include.h"
 
-int** logic_shift(int& rows, int& cols, int** arr, char flag)//flag может быть только '1' или только '2'!
+template <typename T>
+T** logic_shift(int& rows, int& cols, T** arr, char flag)//flag может быть только '1' или только '2'!
 {
-	int** new_arr = copy_arr(rows, cols, arr);
+	T** new_arr = copy_arr(rows, cols, arr);
 	int old_rows = rows;
 	int old_cols = cols;
 
@@ -23,3 +24,7 @@ int** logic_shift(int& rows, int& cols, int** arr, char flag)//flag может быть т
 
 	return arr;
 }
+
+template int** logic_shift<int>(int&, int&, int**, char);
+template float** logic_shift<float>(int&, int&, float**, char);
+template double** logic_shift<double>(int&, int&, double**, char);

@@ -1,6 +1,7 @@
 #include "Include.h"
 
-int** shift_right(int &rows, int &cols, int** new_arr)
+template <typename T>
+T** shift_right(int &rows, int &cols, T** new_arr)
 {
     if (array_check(rows, cols, new_arr))
     {//в случае не корректности массива, предлагаем либо ввести новый массив, либо выйти в меню
@@ -35,3 +36,7 @@ int** shift_right(int &rows, int &cols, int** new_arr)
     }
     return new_arr;
 }
+
+template int** shift_right<int>(int&, int&, int**);
+template float** shift_right<float>(int&, int&, float**);
+template double** shift_right<double>(int&, int&, double**);
