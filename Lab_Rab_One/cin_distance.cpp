@@ -2,6 +2,7 @@
 
 bool cin_distance(double &A, double &B, double *Arr, int lenght)//ввод дистанции
 {
+	text_s3_1();
 	char arr[16] = "";
 	display_array(lenght, Arr);//выводим массив
 	cout << "Enter start of range 'A':\n";//ввод начала диапазона

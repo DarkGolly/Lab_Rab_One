@@ -1,6 +1,6 @@
 #include "Include.h"
 
-void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссылку изменить нельзя, а вот значения по этой ссылки можно
+int** menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссылку изменить нельзя, а вот значения по этой ссылки можно
 {
 	char switch_on = ' ';
 	while (true)
@@ -13,19 +13,19 @@ void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссы
 		if (switch_on == '0')
 		{
 			system("cls");
-			break;
+			return arr;
 		}
 		switch (switch_on)
 		{
 		case '1':
 			system("cls");
-			logic_shift(rows, cols, arr, switch_on);//сдвиг вниз
+			arr = logic_shift(rows, cols, arr, switch_on);//сдвиг вниз
 			system("pause");
 			system("cls");
 			break;
 		case '2':
 			system("cls");
-			logic_shift(rows, cols, arr, switch_on);//сдвиг вправо
+			arr = logic_shift(rows, cols, arr, switch_on);//сдвиг вправо
 			system("pause");
 			system("cls");
 			break;
@@ -37,6 +37,8 @@ void menu_s_4(int &rows, int &cols, int** arr)//амперсанд - это ссылка, саму ссы
 			break;
 		default:
 			cout << "Attention!!! \nchoose number again:";
+			system("pause");
+			system("cls");
 			break;
 		}
 	}

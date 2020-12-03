@@ -12,7 +12,7 @@ bool s_4()
     arr = data_enter(rows, cols);//присваиваем указателю указатель на двумерный массив
 
     system("cls");
-    menu_s_4(rows, cols, arr);//вызов меню
+    arr = menu_s_4(rows, cols, arr);//вызов меню
 
     destroy(arr, rows, cols);//удаление двумерного динамического массива
 

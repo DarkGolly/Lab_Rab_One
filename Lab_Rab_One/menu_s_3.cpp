@@ -12,6 +12,7 @@ void menu_s_3(double* arr, int & len)
 		cin >> switch_on;
 		if (switch_on == '0')
 		{
+			destroy(arr, len);//удаляем динамический массив
 			system("cls");
 			break;
 		}
@@ -25,7 +26,7 @@ void menu_s_3(double* arr, int & len)
 			break;
 		case '2':
 			system("cls");
-			logic_sum(arr, len);//сумма элементов массива после максимального элемента
+			arr = logic_sum(arr, len);//сумма элементов массива после максимального элемента
 			system("pause");
 			system("cls");
 			break;
@@ -37,6 +38,8 @@ void menu_s_3(double* arr, int & len)
 			break;
 		default:
 			cout << "Attention!!! \nchoose number seminar again:";
+			system("pause");
+			system("cls");
 			break;
 		}
 	}

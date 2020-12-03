@@ -1,8 +1,10 @@
 #include "Include.h"
 
-void logic_shift(int& rows, int& cols, int** arr, char flag)//flag может быть только '1' или только '2'!
+int** logic_shift(int& rows, int& cols, int** arr, char flag)//flag может быть только '1' или только '2'!
 {
 	int** new_arr = copy_arr(rows, cols, arr);
+	int old_rows = rows;
+	int old_cols = cols;
 
 	display_array(rows, cols, arr);//выводим массив
 
@@ -17,7 +19,7 @@ void logic_shift(int& rows, int& cols, int** arr, char flag)//flag может быть то
 
 	display_array(rows, cols, new_arr);//выводим массив
 
-	menu_shift(rows, cols, arr, new_arr);//выбираем какой массив сделать основным
+	arr = menu_shift(rows, cols, arr, new_arr, old_rows, old_cols);//выбираем какой массив сделать основным
 
-	delete new_arr;
+	return arr;
 }

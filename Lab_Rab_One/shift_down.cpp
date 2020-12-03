@@ -5,7 +5,7 @@ int** shift_down(int& rows, int& cols, int** new_arr)
 {
     if (array_check(rows, cols, new_arr))//проверяем массив корректность
     {//в случае не корректности массива, предлагаем либо ввести новый массив, либо выйти в меню
-        menu_error_s_4(new_arr, rows, cols);
+        new_arr = menu_error_s_4(new_arr, rows, cols);
     }
     else
     {

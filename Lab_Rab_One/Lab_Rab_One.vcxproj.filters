@@ -153,6 +153,9 @@
     <ClCompile Include="copy_arr.cpp">
       <Filter>Исходные файлы\Seminar4</Filter>
     </ClCompile>
+    <ClCompile Include="text_s3_1.cpp">
+      <Filter>Исходные файлы\text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include.h">

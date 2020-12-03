@@ -12,6 +12,5 @@ bool s_3_logic()
     system("cls");//чистим консоль
      
     menu_s_3(arr, length);//вызываем меню 3 семинара
-    destroy(arr, length);//удаляем динамический массив
     return true;
 }

@@ -7,7 +7,7 @@ bool logic_sorting(int len, double* arr)
 	cout << "it was\n\n";
 	display_array(len, arr);
 
-	cout << "\n\n\nit becam\n\n";
+	cout << "\n\n\nThis is the result of modulo quicksort.\n\n";
 	new_arr = sorting_s_3(arr, len);
 	display_array(len, new_arr);
 
