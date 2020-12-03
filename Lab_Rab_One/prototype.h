@@ -1,6 +1,6 @@
 #pragma once
 
-int get_type();
+char get_type();
 template <typename T>
 extern T* data_enter(int& length);
 template <typename T>
@@ -77,9 +77,9 @@ template <typename T>
 extern T check(T a);
 double check_doub(char* isDigit);
 template <typename T>
-extern void destroy(T* arr, int len);
+extern void destroy(T* arr);
 template <typename T>
-extern void destroy(T** arr, int rows, int cols);
+extern void destroy(T** arr, int rows);
 void text_menu();
 void text_menu_s_3();
 void text_s3_1();

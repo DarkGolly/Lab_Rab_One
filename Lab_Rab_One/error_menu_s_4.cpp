@@ -12,7 +12,7 @@ T** menu_error_s_4(T** arr, int& rows, int& cols)//меню выбора действий в случае
         switch (temp)
         {
         case '1':
-            destroy(arr, rows, cols);
+            destroy(arr, rows);
             rows = enter_length(rows);
             cols = enter_length(cols);
             arr = data_enter<T>(rows, cols);

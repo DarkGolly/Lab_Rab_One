@@ -19,7 +19,7 @@ T* wrong_len(T* arr, int& len, bool& flag)
         case '1':
             flag = true;
             system("cls");
-            destroy(arr, len);//удаляем текущий массив 
+            destroy(arr);//удаляем текущий массив 
             len = enter_length(len);
             arr = data_enter<T>(len);// и создаём новый
             return arr;//продолжаем работу

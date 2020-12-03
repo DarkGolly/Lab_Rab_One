@@ -13,7 +13,7 @@ void menu_s_3(T* arr, int & len)
 		cin >> switch_on;
 		if (switch_on == '0')
 		{
-			destroy(arr, len);//удаляем динамический массив
+			destroy(arr);//удаляем динамический массив
 			system("cls");
 			break;
 		}

@@ -11,7 +11,7 @@ T* data_enter(int &length)
 	{
 		cout << "\telement [ " << i << " ] --->:";
 		cin >> arr;
-		Array[i] = check_doub(arr);//вызываем функцию которая обрабатывает введённое значение
+		Array[i] = static_cast<T>(check_doub(arr));//вызываем функцию которая обрабатывает введённое значение
 	}
 	return Array;//возвращаем указатель на массив
 }
@@ -30,7 +30,7 @@ T** data_enter(int& rows, int& cols)
 		arr[i] = new T[cols];
 	}
 
-	T temp_dig = 0.0;
+	T temp_dig = 0;
 	cout << "Enter a data in matrix: " << endl;
 	for (int i = 0; i < rows; ++i)
 	{

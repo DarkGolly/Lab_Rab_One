@@ -8,10 +8,10 @@ bool cin_distance(T &A, T &B, T *Arr, int lenght)//ввод дистанции
 	display_array(lenght, Arr);//выводим массив
 	cout << "Enter start of range 'A':\n";//ввод начала диапазона
 	cin >> arr;
-	A = check_doub(arr);//проверяем на корректность введённого значения
+	A = static_cast<T>(check_doub(arr));//проверяем на корректность введённого значения
 	cout << "Enter end of range 'B':\n";//ввод конец диапазона
 	cin >> arr;
-	B = check_doub(arr);
+	B = static_cast<T>(check_doub(arr));
 	if (A > B)
 	{
 		cout << "Invalid range specified!\nThe A value must not be greater than the B value!\n";

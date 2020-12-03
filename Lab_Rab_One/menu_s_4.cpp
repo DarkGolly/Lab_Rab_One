@@ -14,7 +14,7 @@ void menu_s_4(int &rows, int &cols, T** arr)//амперсанд - это ссылка, саму ссылк
 		cin >> switch_on;
 		if (switch_on == '0')
 		{
-			destroy(arr, rows, cols);//удаление двумерного динамического массива
+			destroy(arr, rows);//удаление двумерного динамического массива
 			system("cls");
 			break;
 		}
@@ -34,7 +34,7 @@ void menu_s_4(int &rows, int &cols, T** arr)//амперсанд - это ссылка, саму ссылк
 			break;
 		case '3':
 			system("cls");
-			destroy(arr, rows, cols);//удаление массива и
+			destroy(arr, rows);//удаление массива и
 			arr = data_enter<T>(rows, cols);//создание нового
 			system("cls");
 			break;

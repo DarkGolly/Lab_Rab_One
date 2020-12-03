@@ -19,14 +19,17 @@ void menu()
             system("cls");//чистит консоль
             switch (get_type())
             {
-                case 1: 
+                case '1': 
                     s_3_logic<int>();//вызываем 3 семинар
                     break;
-                case 2:
+                case '2':
                     s_3_logic<float>();
                     break;
-                case 3:
+                case '3':
                     s_3_logic<double>();
+                    break;
+                default:
+                    cout << "ATTENTION!!!\nchoose type again:";
                     break;
             }
             break;
@@ -34,13 +37,13 @@ void menu()
             system("cls");
             switch (get_type())
             {
-               case 1:
+               case '1':
                    s_4<int>();
                    break;
-               case 2:
+               case '2':
                    s_4<float>();
                    break;
-               case 3:
+               case '3':
                    s_4<double>();
                    break;
             }

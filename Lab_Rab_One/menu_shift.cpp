@@ -12,13 +12,6 @@ T** menu_shift(int& rows, int& cols, T** arr, T** new_arr, int old_rows, int old
 		switch (switch_on)
 		{
 		case '1':
-			/*for (int i = 0; i < rows; i++)
-			{
-				for (int j = 0; j < cols; j++)
-				{
-					arr[i][j] = new_arr[i][j];
-				}
-			}*/
 			delete arr;
 			return new_arr;
 		case '2':
