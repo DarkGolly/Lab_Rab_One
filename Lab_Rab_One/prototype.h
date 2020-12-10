@@ -2,7 +2,7 @@
 
 char get_type();
 template <typename T>
-extern T* data_enter(int& length);
+extern T* data_enter(int& length);//extern расширяет область видимости на всю программу.
 template <typename T>
 extern T** data_enter(int& rows, int& cols);
 int enter_length(int& length);
